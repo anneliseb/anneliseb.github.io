@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="7px" height="12px" viewBox="0 0 7 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_keyboard_arrow_right_black_24px</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ic_keyboard_arrow_right_black_24px" transform="translate(-9.000000, -7.000000)">
+            <path d="M9.29423077,16.6342316 L13.17,12.75 L9.29423077,8.86576839 L9.29423077,8.86576839 C8.90517069,8.47585884 8.90551495,7.84448505 9.295,7.455 L9.295,7.455 L9.295,7.455 C9.68436075,7.06563925 10.3156393,7.06563925 10.705,7.455 L15.2928932,12.0428932 L15.2928932,12.0428932 C15.6834175,12.4334175 15.6834175,13.0665825 15.2928932,13.4571068 L10.705,18.045 L10.705,18.045 C10.3156393,18.4343607 9.68436075,18.4343607 9.295,18.045 L9.295,18.045 L9.295,18.045 C8.90551495,17.655515 8.90517069,17.0241412 9.29423077,16.6342316 Z" id="Shape" fill="#000000" fill-rule="nonzero"></path>
+            <polygon id="Shape" points="0 0.75 24 0.75 24 24.75 0 24.75"></polygon>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,529 @@
+/*************************
+GENERAL
+**************************/
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+	font-family: 'Raleway-Medium', sans-serif;
+	background: #fff;
+	margin: 0 auto;
+}
+
+
+h2 {
+	font-family: 'Libre Baskerville', serif;
+  font-weight: 1.25rem;
+  line-height: 1.5rem;
+ 	margin: 3rem 0 1rem 0;
+}
+
+p {
+  font-family: 'Raleway-Medium', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin: .5rem 0rem;
+}
+
+hr {
+  border-top: .5px solid #000;
+  opacity: .2;
+  width: 40%;
+}
+
+section .button{
+  display: block;
+  margin: 6rem auto 2rem;
+}
+
+.button {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: white;
+  padding: 1.5rem 0;
+  background-color: #2EC4B6;
+  border-radius: 2px;
+  text-decoration: none;
+  max-width: 25%;
+  text-align: center;
+}
+
+.button:hover {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: white;
+  padding: 1.5rem 0;
+  background-color: #2EC4B6;
+  opacity: .8;
+  border-radius: 2px;
+  text-decoration: none;
+  max-width: 25%;
+  text-align: center;
+}
+
+header {
+  margin: 0 auto;
+  padding: 16px 16px;
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, .32);
+  background-color: #fff;
+  position: relative;
+  z-index: 2;
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    margin: 0 auto;
+    padding: 16px 48px;
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, .32);
+    background-color: #fff;
+    position: relative;
+    z-index: 2;
+  }
+}
+
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+
+.logo {
+  margin-right: auto;
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 2rem;
+  letter-spacing: .25px;
+  color: #000;
+}
+
+
+.social-icon {
+  margin: 0 auto;
+  padding: 0 .5rem 0 .5rem;
+  width: 2.5rem;
+}
+
+/*************************
+Gallery
+**************************/
+
+
+.gallery { 
+  margin: 0;
+  padding: 3rem 2rem;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  text-decoration: none;
+}
+
+.gallery .gallery-item {
+  width: calc(100% / 3 - 2rem); 
+  margin: 1rem;
+  padding: 0;
+  text-decoration: none;
+}
+
+.gallery .gallery-item a {
+  text-decoration: none;
+}
+
+.gallery .gallery-item a img {
+  width: 100%;
+  height: auto;
+  text-decoration: none;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.08), 0px 4px 8px 0px rgba(0, 0, 0, 0.08);
+}
+
+.gallery .gallery-item a img:hover {
+	text-decoration: none;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.16), 0px 4px 8px 0px rgba(0, 0, 0, 0.16);
+}
+
+/*************************
+Timeline
+**************************/
+
+.timeline {
+  background-color: #f0f0f0;
+  margin: 3rem 0rem;
+  padding-bottom: 48px;
+}
+
+.timeline h3{
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: #131515;
+  margin: 0 0 .25rem 0;
+  display: inline-block;
+}
+
+.timeline time{
+	font-family: 'Libre Baskerville', serif;
+  font-size: .75rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #666;
+  padding: 0 0 0 .25rem;
+}
+
+.timeline h4{
+	font-weight: 600;
+  margin: .25rem 0 0 0;
+  font-size: 1rem;
+}
+
+.timeline p{
+  margin: .75rem 0 0 0;
+  font-size: .875rem;
+  line-height: 1.25rem;
+}
+
+.timeline ul{
+	padding: 0px;
+	margin-bottom: 0 auto;
+}
+
+.timeline ul li {
+  list-style-type: none;
+  position: relative;
+  width: 6px;
+  margin: 0 auto;
+  padding-top: 48px;
+  background: #fff;
+}
+
+.timeline ul li::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: inherit;
+}
+
+.timeline ul li div {
+  position: relative;
+  bottom: 0;
+  width: 440px;
+  padding: 1rem;
+  background: white;
+  border-radius: .5rem;
+}
+
+
+.timeline ul li div::before {
+  content: '';
+  position: absolute;
+  bottom: .5rem;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+
+.timeline ul li:nth-child(odd) div {
+  left: 45px;
+}
+ 
+.timeline ul li:nth-child(odd) div::before {
+  left: -15px;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent #fff transparent transparent;
+}
+
+.timeline ul li:nth-child(even) div {
+  left: -478px;
+}
+ 
+.timeline ul li:nth-child(even) div::before {
+  right: -15px;
+  border-width: 8px 0 8px 16px;
+  border-color: transparent transparent transparent #fff;
+}
+
+
+/*************************
+About
+**************************/
+
+.about {
+	margin: 0 auto;
+	background: white;
+	padding: 4rem 20rem;
+}
+
+.about-description {
+	padding-bottom: 2rem;
+}
+
+
+.about h1 {
+  color: #000;
+  text-align: center;
+  margin: 0 0 1.5rem 0;
+}
+
+.about p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #000;
+  margin: 0;
+  padding: .5rem 0rem;
+}
+
+
+
+/*************************
+Projects
+**************************/
+
+.hero-priceline-farebrands {
+  height: 424px;
+  background: #f0f0f0 url('../img/PricelineFareBrands_Hero.png') no-repeat center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-priceline-responsive {
+  height: 424px;
+  background: #f0f0f0 url('../img/PricelineResponsive_Hero.png') no-repeat center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-allure {
+  height: 424px;
+  background: #f0f0f0 url('../img/Allure_Hero.png') no-repeat center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-newyorker {
+  height: 424px;
+  background: #f0f0f0 url('../img/TheNewYorker_Hero.png') no-repeat center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-brides {
+  height: 424px;
+  background: #f0f0f0 url('../img/Brides_Hero.png') no-repeat center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-justforfun {
+  height: 424px;
+  background: #f0f0f0 url('../img/JustForFun_Hero.png') no-repeat center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-title {
+  background-color: #fff;
+  opacity: .95;
+  padding: 2rem 2rem;
+  border-radius: 2px 2px 2px 2px;
+  text-align: center;
+  width: 95%;
+}
+
+@media screen 
+  and (min-width: 768px) 
+  and (max-width: 1023px) {
+    .hero-title  {
+      background-color: #fff;
+      opacity: .95;
+      padding: 2rem 2rem;
+      border-radius: 2px 2px 2px 2px;
+      text-align: center;
+      width: 60%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero-title  {
+    background-color: #fff;
+    opacity: .95;
+    padding: 2rem 2rem;
+    border-radius: 2px 2px 2px 2px;
+    text-align: center;
+    width: 40%;
+  }
+}
+
+.hero-title .company {
+  font-size: 1.25rem;
+}
+
+.hero-title .project-name {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: .5rem 0rem;
+}
+
+.secondary {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: .25rem;
+  font-size: 1rem;
+}
+
+.secondary .job-title {
+  margin: 0 .5rem 0 0;
+}
+
+.secondary .time {
+	margin: 0 0 0 .5rem;
+}
+
+/*************************
+Project Main Content
+**************************/
+
+.main-container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.main {
+  margin: 1.5rem 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .main {
+    margin: 3rem 2rem;
+  } 
+}
+
+.project-text {
+  margin: 0 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .project-text {
+    margin: 0 4rem;
+ }
+}
+
+.problem {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.25rem;
+  font-weight: bold;
+  line-height: 2rem;
+  margin: 0 1rem 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .problem {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 2.25rem;
+    margin: 0 4rem 3rem;
+ }
+}
+
+img {
+  max-width: 100%;
+  margin: 2rem 0;
+}
+
+/*************************
+Slideshow
+**************************/
+
+.slide-container {
+  position: relative;
+}
+
+.slidesjs-previous {
+    display: inline-block;
+    background: url(../img/arrow_left.svg) no-repeat;
+    font-size: 0;
+    width: 120px;
+    height: 120px;
+    background-size: contain;
+    position: absolute;
+    top: 30%;
+    z-index: 222;
+}
+
+.slidesjs-next {
+    display: inline-block;
+    background: url(../img/arrow_right.svg) no-repeat;
+    font-size: 0;
+    width: 120px;
+    height: 120px;
+    background-size: contain;
+    position: absolute;
+    top: 30%;
+    right: 0;
+    z-index: 222;
+}
+
+.slidesjs-pagination {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+}
+
+.slidesjs-pagination-item {
+  display: inline-block;
+}
+
+.slidesjs-pagination-item a {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background: black;
+  font-size: 0px;
+  margin: 0 .25rem;
+}
+
