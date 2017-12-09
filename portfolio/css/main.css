@@ -20,8 +20,17 @@ body {
 h2 {
 	font-family: 'Libre Baskerville', serif;
   font-weight: 1.25rem;
-  line-height: 1.5rem;
- 	margin: 3rem 0 1rem 0;
+  line-height: 1.75rem;
+ 	margin: 2rem 0 1rem 0;
+}
+
+@media screen and (min-width: 768px) {
+  h2 {
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 1.25rem;
+    line-height: 1.75rem;
+    margin: 3rem 0 1rem 0;
+  }
 }
 
 p {
@@ -111,7 +120,7 @@ nav {
 
 .social-icon {
   margin: 0 auto;
-  padding: 0 .5rem 0 .5rem;
+  padding: 0 0 0 1rem;
   width: 2.5rem;
 }
 
@@ -297,9 +306,8 @@ Projects
 **************************/
 
 .hero-priceline-farebrands {
-  height: 424px;
-  background: #f0f0f0 url('../img/PricelineFareBrands_Hero.png') no-repeat center;
-  background-size: cover;
+  height: 320px;
+  background: #f0f0f0 url('../img/PricelineFareBrands_Hero.png') no-repeat center / cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -307,10 +315,21 @@ Projects
   z-index: 1;
 }
 
+@media screen and (min-width: 768px) {
+  .hero-priceline-farebrands {
+    height: 424px;
+    background: #f0f0f0 url('../img/PricelineFareBrands_Hero.png') no-repeat center / cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+  }
+}
+
 .hero-priceline-responsive {
   height: 424px;
-  background: #f0f0f0 url('../img/PricelineResponsive_Hero.png') no-repeat center;
-  background-size: cover;
+  background: #f0f0f0 url('../img/PricelineResponsive_Hero.png') no-repeat center / cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -365,7 +384,7 @@ Projects
 .hero-title {
   background-color: #fff;
   opacity: .95;
-  padding: 2rem 2rem;
+  padding: 1.5rem 1rem;
   border-radius: 2px 2px 2px 2px;
   text-align: center;
   width: 95%;
@@ -490,7 +509,7 @@ Slideshow
     height: 120px;
     background-size: contain;
     position: absolute;
-    top: 30%;
+    top: 41%;
     z-index: 222;
 }
 
@@ -502,8 +521,8 @@ Slideshow
     height: 120px;
     background-size: contain;
     position: absolute;
-    top: 30%;
-    right: 0;
+    top: 41%;
+    right: -5%;
     z-index: 222;
 }
 
@@ -525,5 +544,9 @@ Slideshow
   background: black;
   font-size: 0px;
   margin: 0 .25rem;
+}
+
+.slidesjs-pagination-item a:focus {
+  background: blue;
 }
 
