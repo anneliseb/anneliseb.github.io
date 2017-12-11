@@ -133,11 +133,6 @@ Gallery
   .gallery { 
     margin: 0 auto;
     padding: 2rem 1rem;
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    text-decoration: none;
   }
 }
 
@@ -145,11 +140,6 @@ Gallery
   .gallery { 
     margin: 0 auto;
     padding: 3rem 2rem;
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    text-decoration: none;
   }
 }
 
