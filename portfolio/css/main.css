@@ -127,9 +127,10 @@ Gallery
   flex-wrap: wrap;
   flex-direction: row;
   text-decoration: none;
+  justify-content: center;
 }
 
-@media screen and (min-width: 475px) {
+@media screen and (min-width: 600px) {
   .gallery { 
     margin: 0 auto;
     padding: 2rem 1rem;
@@ -151,10 +152,10 @@ Gallery
   text-decoration: none;
 }
 
-@media screen and (min-width: 475px) {
+@media screen and (min-width: 600px) {
   .gallery .gallery-item {
     width: calc(100% / 2 - 2rem); 
-    margin: .5rem;
+    margin: 1rem;
   }
 }
 
