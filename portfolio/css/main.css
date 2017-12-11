@@ -60,22 +60,13 @@ section .button{
   background-color: #2EC4B6;
   border-radius: 2px;
   text-decoration: none;
-  max-width: 25%;
+  max-width: 300px;
   text-align: center;
 }
 
 .button:hover {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 600;
-  font-size: 1.5rem;
-  color: white;
-  padding: 1.5rem 0;
   background-color: #2EC4B6;
   opacity: .8;
-  border-radius: 2px;
-  text-decoration: none;
-  max-width: 25%;
-  text-align: center;
 }
 
 header {
@@ -128,10 +119,9 @@ nav {
 Gallery
 **************************/
 
-
 .gallery { 
-  margin: 0;
-  padding: 3rem 2rem;
+  margin: 0 auto;
+  padding: 1.5rem .5rem;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
@@ -139,11 +129,50 @@ Gallery
   text-decoration: none;
 }
 
+@media screen and (min-width: 475px) {
+  .gallery { 
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    text-decoration: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .gallery { 
+    margin: 0 auto;
+    padding: 3rem 2rem;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    text-decoration: none;
+  }
+}
+
+
 .gallery .gallery-item {
-  width: calc(100% / 3 - 2rem); 
-  margin: 1rem;
+  width: calc(100% / 1 - 1rem); 
+  margin: .5rem;
   padding: 0;
   text-decoration: none;
+}
+
+@media screen and (min-width: 475px) {
+  .gallery .gallery-item {
+    width: calc(100% / 2 - 2rem); 
+    margin: .5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .gallery .gallery-item {
+    width: calc(100% / 3 - 2rem); 
+    margin: 1rem;
+  }
 }
 
 .gallery .gallery-item a {
@@ -155,6 +184,8 @@ Gallery
   height: auto;
   text-decoration: none;
   box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.08), 0px 4px 8px 0px rgba(0, 0, 0, 0.08);
+  margin: 0;
+  padding: 0;
 }
 
 .gallery .gallery-item a img:hover {
@@ -205,12 +236,14 @@ Timeline
 
 .timeline ul{
 	padding: 0px;
-	margin-bottom: 0 auto;
+	margin: 0 auto;
+  width: 100%;
 }
 
 .timeline ul li {
   list-style-type: none;
   position: relative;
+  left: -42%;
   width: 6px;
   margin: 0 auto;
   padding-top: 48px;
@@ -232,10 +265,11 @@ Timeline
 .timeline ul li div {
   position: relative;
   bottom: 0;
-  width: 440px;
+  width: 300px;
   padding: 1rem;
   background: white;
   border-radius: .5rem;
+  left: 45px;
 }
 
 
@@ -246,41 +280,43 @@ Timeline
   width: 0;
   height: 0;
   border-style: solid;
-}
-
-
-.timeline ul li:nth-child(odd) div {
-  left: 45px;
-}
- 
-.timeline ul li:nth-child(odd) div::before {
   left: -15px;
   border-width: 8px 16px 8px 0;
   border-color: transparent #fff transparent transparent;
 }
 
-.timeline ul li:nth-child(even) div {
-  left: -478px;
-}
- 
-.timeline ul li:nth-child(even) div::before {
-  right: -15px;
-  border-width: 8px 0 8px 16px;
-  border-color: transparent transparent transparent #fff;
-}
 
 
 /*************************
 About
 **************************/
 
+
 .about {
-	margin: 0 auto;
+	margin: 1.5rem 1rem;
 	background: white;
-	padding: 4rem 20rem;
+}
+
+@media screen and (min-width: 768px) {
+  .about {
+    margin: 3rem 2rem;
+  } 
+}
+
+@media screen and (min-width: 1024px) {
+  .about {
+    margin: 3rem 10%;
+  } 
+}
+
+@media screen and (min-width: 1280px) {
+  .about {
+    margin: 3rem 20%;
+  } 
 }
 
 .about-description {
+  margin: 0 1rem;
 	padding-bottom: 2rem;
 }
 
