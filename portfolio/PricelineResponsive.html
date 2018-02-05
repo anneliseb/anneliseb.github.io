@@ -39,6 +39,14 @@
         	<li>How do people plan their trip?</li>
         </ul>
         <p>I collaborated with our product manager on competitive research and analytics data and conducted user research into a comprehensive report that allowed us to plan our requirements for the MVP. Our main focus for the MVP was helping users search and book a flight and did not heavily focus on the post booking experience.</p>
+        <div class="slide-container">
+          <div id="slides">
+          <img src="img/Allure/Allure_ProductFinder1.png">
+          <img src="img/Allure/Allure_ProductFinder2.png">
+          <img src="img/Allure/Allure_ProductFinder3.png">
+          <img src="img/Allure/Allure_ProductFinder4.png">
+          <img src="img/Allure/Allure_ProductFinder5.png">
+          </div>
         <h2>{02} How do we build it?</h2>
         <p>The product and tech team got together to discuss the best way to build the new flights experience. We decided to entirely scrap the old flights website early on since the code was old and broken. Then, after talking about development and design implications of a single app vs multiple applications decided to split the site into three different applications. And though out of scope for the initial MVP, we tried to keep in mind that this could be built up to be responsive.</p>
         <p>Because I was a single designer working with a large team of 7-9 FE developers, the devs started building from wireframes and prototypes.</p>
@@ -53,6 +61,16 @@
         	<li>First responsive product path on Priceline</li>
         	<li>A successful foundation to build up from and add new features to that will provide a better experience for customers.</li>
         </ul>
+         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script src="js/jquery.slides.min.js"></script>
+        <script>
+          $(function() {
+            $('#slides').slidesjs({
+             width: 1056,
+              height: 720
+            });
+          });
+        </script>
       </section>
     </main>
   </body>
