@@ -78,7 +78,7 @@ header {
   z-index: 2;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 600px) {
   header {
     margin: 0 auto;
     padding: 16px 48px;
@@ -536,7 +536,8 @@ Slideshow
     height: 120px;
     background-size: contain;
     position: absolute;
-    top: 41%;
+    top: 40%;
+    left:-3%;
     z-index: 222;
 }
 
@@ -549,7 +550,7 @@ Slideshow
     background-size: contain;
     position: absolute;
     top: 41%;
-    right: -5%;
+    right: -7%;
     z-index: 222;
 }
 
