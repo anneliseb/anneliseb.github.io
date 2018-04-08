@@ -478,7 +478,7 @@ Project Main Content
 }
 
 .main {
-  margin: 1.5rem 1rem;
+  margin: 1.5rem .5rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -488,7 +488,7 @@ Project Main Content
 }
 
 .project-text {
-  margin: 0 1rem;
+  margin: 0 1rem 1.5rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -517,7 +517,7 @@ Project Main Content
 
 img {
   max-width: 100%;
-  margin: 2rem 0;
+  margin: 1rem 0;
 }
 
 /*************************
