@@ -54,6 +54,7 @@ p {
   }
 } 
 
+
 hr {
   border-top: .5px solid #000;
   opacity: .2;
@@ -587,6 +588,10 @@ Project Main Content
   }
 }
 
+.project-text ul li{
+  padding: 4px 0;
+}
+
 
 img {
   width: calc(100% / 1);
@@ -607,7 +612,8 @@ img {
 
 @media screen and (min-width: 768px) {
   .small-image { 
-    max-width: 1280px;
+    display: block;
+    max-width: 1232px;
     margin: 0 auto;
     padding: 2rem 0;
   }
