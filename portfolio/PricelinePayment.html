@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Annelise Bryda | UX/UI Designer</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+       <nav>
+        <a href=index.html class="logo" >Annelise Bryda</a>
+            <a href="https://www.linkedin.com/in/annelise-bryda-3a91ab20/" target="_blank"><img src="img/linkedin.png" alt="Linkedin logo" class="social-icon"></a>
+            <a href="https://www.instagram.com/annelisebryda/" target="_blank"><img src="img/instagram.png" alt="Instagram logo" class="social-icon"></a>
+        </nav>
+    </header>
+    <section class="hero-priceline-farebrands">
+      <div class="hero-title">
+        <span class="company">Priceline</span>
+        <div class="project-name">Payment Component</div>
+          <section class="secondary">
+           <div class="job-title">Lead Designer</div>
+           <div>&#8226;</div>
+           <div class="time">Jul 2018&#8211;Present</div>
+          </section>
+      </div>
+    </section>
+    <main class="main-container">
+      <section class="main">
+        <p class="problem">Priceline has ~30 different checkout experiences/applications. There are also other touchpoints in the customer's journey, such as post-booking, where payments may occur. My goal was to get buy-in and create a strategy for building a front-end payment component.</p>
+        <hr>
+        <div class="project-section">
+          <div class="project-text">
+            <h2>{01} Shared Understanding</h2>
+            <p>First, to establish a shared understanding and to get buy-in from my peers, I conducted a payment component definition workshop. The workshop attendees were primarily product managers from different teams, who all work on one or more of those ~30 checkouts.</p>
+              <div class="project-sub-section">
+                <div>
+                  <h3>Method</h3>
+                  <p>Conduct a “futurespective” where you imagine that the payment component is successfully implemented in your path. By doing this, we will be able to reflect on our expectations of the component and the steps we will need to take to get there. Futurespectives are used as part of agile within technology but the concept can be adapted for this workshop.</p>
+                </div>
+                <div class="three-images">
+                  <div class="three-images-item">
+                    <h3>Part 1: What us the success criteria of the payment component?</h3>
+                    <p>Answer the following questions by imagining a payment component exists and is implemented within checkout of every product path.</p>
+                    <dl>
+                      <dt>Intention</dt>
+                      <dd>Who is using it? What does it consist of? What does it do?</dd>
+                      <dt>Successful If</dt>
+                      <dd>What are the indicators that prove the criteria is being met? How has it been helpful/valuable?</dd>
+                      <dt>Failure If</dt>
+                      <dd>What are the indicators that prove the criteria is not being met?</dd>
+                    </dl>
+                  </div>
+                  <div class="three-images-item">
+                    <h3>Part 2: What is the payment component?</h3>
+                    <p>Next, create a definition or the payment component based on these thoughts. The definition should consist of an elevator pitch type of sentence and a list of broad “acceptance criteria”.</p>
+                    <p>Each group will have [5] minutes to walk through some of their initial thoughts and their definition.</p>
+                  </div>
+                  <div class="three-images-item">
+                    <h3>Part 3: What are the outside forces that may be required to work with the payment component?</h3>
+                    <p>Who are the external/internal stakeholders? Who are the external/internal partners?</p>
+                    <p>How might their objectives match ours? How might their objectives clash with ours? What value could they derive from this work? How might they help sponsor this work?</p>
+                    <p>Does the payment component need to interact with any other systems, platforms, components, etc.?</p>
+                  </div>
+                </div>
+                <div class="project-sub-section-gray">
+                  <h3>Our Definition</h3>
+                  <p>A single unified payments experience that collects, validates, and processes payments for all transactions on any platform for a variety of payment types.</p>
+                  <hr class="full">
+                  <dl>
+                    <dt>Universal</dt>
+                    <dd>All products can implement the payment component, as a single bookings or a packaged booking.</dd>
+                    <dd>All inventory type requirements are supported.</dd>
+                    <dd>Provides a consistent payment validation system for FE and Barclays engine.</dd>
+                    <dt>Flexible</dt>
+                    <dd>Enables customers to pay for our products in a variety of ways, supporting existing payment types and new types that may be introduced in the future.</dd>
+                    <dd>Supports ability to have dynamic fields per payment type or user.</dd>
+                    <dt>Smart</dt>
+                    <dd>Ties into other platforms and services to use past behavior and explicit preferences to present the payment option most likely to lead to a seamless checkout experience.</dd>
+                    <dd>Connects with user profile to store/retrieve payment info.</dd>
+                    <dt>Secure</dt>
+                    <dd>Users are confident that their payment info is safe and secure when buying a product on Priceline.</dd>
+                  </div>
+                </div>
+                <div class="two-images">
+                  <div class="two-images-item">
+                    <img src="img/PricelinePayment/PricelinePayment_Workshop1.png">
+                  </div>
+                  <div class="two-images-item">
+                    <img src="img/PricelinePayment/PricelinePayment_Workshop2.png">
+                  </div>
+                </div>
+          </div>
+        </div>
+        <div class="project-section-gray">
+          <div class="project-text">
+            <h2>{02} Architecture</h2>
+            <p>Next, I took a step back in order to consider the architecture and pieces that make up the payment component, and how the payment component fits into a larger checkout application.</p>
+          </div>
+            <img class="xsmall-image" src="img/PricelinePayment/PricelinePayment_Architecture.png">
+        </div>
+        <div class="project-section">
+          <div class="project-text">
+            <h2>{03} Credit Card Component</h2>
+            <p>The piece or smaller component, inside the payment component that I focused on first was the credit card component, as this is the most popular form of payment on Priceline today. The credit card component consists of credit card and billing form fields. I started with writing basic form field requirements.</p>
+            <p>I used this documentation also, to illustrate how many of our ~30 checkout experiences lacked basic, expected form field functionality.</p>
+          </div>
+          <img class="xsmall-image" src="img/PricelinePayment/PricelinePayment_Requirements.png">
+        </div>
+        <div class="project-section-gray">
+          <div class="project-text">
+            <h2>{04} Buy-in and Next Steps</h2>
+            <p>Having the support of the product management teams, FE tech teams, and BE payment platform team, I set up time with Priceline’s CPO. I reviewed our payment definition component, the strategy for using this as a stepping stone to get towards a more unified experience and a smarter way of working, and the next steps for continuing this work. The idea was well met and has become a new initiative for the company.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
