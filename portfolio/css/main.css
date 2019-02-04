@@ -247,39 +247,27 @@ Timeline
   padding-bottom: 48px;
 }
 
-.timeline h3{
-  font-family: 'Libre Baskerville', serif;
-  font-size: 1.25rem;
-  font-weight: 700;
-  text-decoration: none;
-  color: #131515;
-  margin: 0 0 .25rem 0;
-  display: inline-block;
+.timeline h3 {
+	padding: 0 0 0 .25rem;
 }
 
-.timeline time{
-	font-family: 'Libre Baskerville', serif;
+.timeline time {
+	font-family: 'Raleway', sans-serif;
   font-size: .75rem;
-  font-weight: 400;
+  font-weight: 500;
   text-transform: uppercase;
   color: #666;
   padding: 0 0 0 .25rem;
 }
 
-.timeline h4{
-	font-weight: 600;
-  margin: .25rem 0 0 0;
-  font-size: 1rem;
-}
-
-.timeline p{
-  margin: .75rem 0 0 0;
+.timeline p {
+  margin: .5rem 0 0 0;
   font-size: .875rem;
   line-height: 1.25rem;
 }
 
 .timeline ul{
-	padding: 0px;
+	padding: 0;
 	margin: 0 auto;
   width: 100%;
 }
