@@ -594,7 +594,7 @@ Projects
 
 .hero-title .company {
   font-size: 1.25rem;
-	font-weight: 400;
+	font-weight: 500;
 }
 
 .hero-title .project-name {
@@ -625,10 +625,12 @@ Projects
 
 .secondary .job-title {
   margin: 0 .5rem 0 0;
+	font-weight: 500;
 }
 
 .secondary .time {
 	margin: 0 0 0 .5rem;
+	font-weight: 500;
 }
 
 /*************************
