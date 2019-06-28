@@ -731,6 +731,11 @@ Project Main Content
   padding: 4px 0;
 }
 
+iframe {
+	display: block;
+  margin: 0 auto;
+}
+
 
 img {
   width: calc(100% / 1);
