@@ -168,9 +168,123 @@ nav {
   width: 2.5rem;
 }
 
+
+/*************************
+Grid
+**************************/
+.intro {
+	font-size: 2rem;
+	line-height: 3rem;
+	font-weight: 500;
+	padding: 5rem 2.5rem 2.5rem;
+	max-width: 1280px;
+}
+
+.grid {
+  margin: 2rem;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+	max-width: 1280px;
+}
+
+@media screen and (min-width: 1024px) {
+  .grid {
+    margin: 0 auto;
+    padding: 3rem 2rem 2rem;
+		list-style: none;
+	  text-decoration: none;
+		max-width: 1280px;
+  }
+}
+
+.grid .grid-item {
+	display: flex;
+	margin: 0 1rem 4rem;
+	padding: 0;
+	text-decoration: none;
+}
+
+.grid .grid-item .grid-item-img {
+	flex: 1;
+	margin: 0 auto;
+	padding: 0 .5rem 0 0;
+	text-decoration: none
+}
+
+.grid .grid-item .grid-item-img img{
+	width: 100%
+  height: auto;
+  text-decoration: none;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.08), 0px 4px 8px 0px rgba(0, 0, 0, 0.08);
+  margin: 0;
+  padding: 0;
+	border-radius: 4px
+}
+
+
+.grid .grid-item .grid-description{
+	flex: 0 0 45%;
+	margin: 0 auto;
+	padding: 0;
+}
+
+a{
+	text-decoration: none;
+}
+
+a:link {
+	color: #000000
+}
+
+a:visited{
+	color: #000000
+}
+
+a:hover{
+	color: #8319E7
+}
+
+
+.grid .grid-item .grid-description h4{
+	font-size: 2rem;
+	line-height: 2.5rem;
+	font-weight: 700;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.grid .grid-item .grid-description h5{
+	font-size: .875rem;
+	line-height: 1.25rem;
+	font-weight: 800;
+	text-transform: uppercase;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.grid .grid-item .grid-description h6{
+	font-size: .875rem;
+	line-height: 1.25rem;
+	font-weight: 500;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.grid .grid-item .grid-description hr{
+	border-top: .5px solid #000;
+	opacity: .16;
+	margin: 1rem 0;
+	padding: 0;
+	width: 20%;
+}
+
+
+
+
 /*************************
 Gallery
-**************************/
+
 
 .gallery {
   margin: 0 auto;
@@ -236,10 +350,11 @@ Gallery
 	text-decoration: none;
   box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.16), 0px 4px 8px 0px rgba(0, 0, 0, 0.16);
 }
+**************************/
 
 /*************************
 Timeline
-**************************/
+
 
 .timeline {
   background-color: #f0f0f0;
@@ -325,27 +440,26 @@ About
 
 
 .about {
-	margin: 1.5rem 1rem;
-	background: white;
+	margin: 0 auto;
+	padding: 1.5rem 1rem;
+	background-color: #f8f8f8;
 }
 
 @media screen and (min-width: 768px) {
   .about {
-    margin: 3rem 2rem;
+		margin: 0 auto;
+    padding: 3rem 2rem;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .about {
-    margin: 3rem 10%;
+		margin: 0 auto;
+    padding: 4rem 3rem;
+		max-width: 1280px;
   }
 }
 
-@media screen and (min-width: 1280px) {
-  .about {
-    margin: 3rem 20%;
-  }
-}
 
 .about-description {
   margin: 0 1rem;
@@ -353,8 +467,12 @@ About
 }
 
 
+
 .about h1 {
   color: #000;
+	font-size: 2rem;
+	line-height: 2.5rem;
+	font-weight: 700;
   text-align: center;
   margin: 0 0 1.5rem 0;
 }
