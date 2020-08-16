@@ -208,6 +208,7 @@ Grid
 
 .grid .grid-item .grid-item-img {
 	flex: 1;
+	margin: 0 auto;
 	padding: 0 .5rem 0 0;
 	text-decoration: none
 }
@@ -225,6 +226,7 @@ Grid
 
 .grid .grid-item .grid-description{
 	flex: 0 0 45%;
+	margin: 0 auto;
 	padding: 0;
 }
 
