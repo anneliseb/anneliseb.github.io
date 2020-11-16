@@ -4,9 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Annelise Bryda | UX/UI Designer</title>
-    <link rel="stylesheet" href="css/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:500,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/new.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@500;700&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -16,6 +15,100 @@
             <a href="https://www.instagram.com/annelisebryda/" target="_blank"><img src="img/instagram.png" alt="Instagram logo" class="social-icon"></a>
         </nav>
     </header>
-    <p>Project coming soon!</P>
+    <main class="project-container">
+      <article class="overview">
+        <h1>Your Priceline Trip</h1>
+          <section class="overview-item">
+              <h4>Background</h4>
+              <p>Priceline had replatformed most of its FE applications, but one application had yet to be replatformed and that was the order confirmation application. Originally, the order confirmation page had been designed as a single template used by each product, air, hotel, and car. But over the years they got further and further from that original single design.</p>
+            </section>
+            <section class="overview-item">
+              <h4>Problem</h4>
+              <p>With a company initiative to grow the number of customers bundling products, Priceline was in need of an order confirmation experience that could take into account a customer booking a single product, or a customer booking 2+ products in the same order.</p>
+            </section>
+            <section class="overview-item">
+              <h4>Goal</h4>
+              <p>The goal was to build a single application of reusable common components in react, replacing the old angular pages. And to provide the customer with a single, organized trip itinerary that helped them feel confident in their purchase and provided the necessary self-service tools should they require help.</p>
+            </section>
+            <section class="overview-item">
+              <h4>Team</h4>
+              <p>My role was lead product designer. A junior designer worked with me during the first half of the project. The rest of the team consisted of a product manager and 4 FE developers. Our key partners were customer care, finace, and the product teams for the individua; product verticals.</p>
+            </section>
+        </article>
+      <article class="project-section">
+        <h2>Supporting Data</h2>
+        <p>What insights were there to gleam from how customers were interacting with the current confirmation page? When did they return to to it and what did they interact with the most? How did this differ by product or advance purchase window?</p>
+        <section class="project-section-content">
+          <div class="data-container">
+            <h4>Top clicked FAQ pages</h4>
+            <ul>
+              <li>1. Airline contact list</li>
+              <li>2. Change or cancel hotel rooms</li>
+              <li>3. Change or cancel airline tickets</li>
+              <li>4. Multi airline tickets</li>
+              <li>5. International phone numbers</li>
+            </ul>
+          </div>
+          <div class="data-container">
+            <h4>% of customers who return to the confirmation page</h4>
+            <ul>
+              <li>Packages 83%</li>
+              <li>Air 78%</li>
+              <li>Rental Car 61%</li>
+              <li>Hotel 51%</li>
+            </ul>
+          </div>
+        </section>
+      </article>
+      <article class="project-section">
+        <h2>Story</h2>
+        <p>Priceline’s user researcher and I partnered up and lead a workshop to define the customers post booking journey. The group created a 5 chapter story and then for each chapter delved into what the customers mindset may be.</p>
+        <p>This exercise also clarified scope. The first 3 chapters of the story we defined as in scope and the last 2 chapters in the story were moved to out of scope.</p>
+        <section class="project-section-content">
+          <div class="story">
+            <div class="story-item">
+              <h5>1. Post-Booking</h5>
+              <p>Did the customers order go through and is it correct?<p>
+            </div>
+            <div class="story-item">
+              <h5>2. Plan</h5>
+              <p>Have plans changed or can we help with further plans?<p>
+            </div>
+            <div class="story-item">
+              <h5>3. Pre-travel</h5>
+              <p>What infrmation does the customer need?<p>
+            </div>
+            <div class="story-item">
+              <h5>4. Travel</h5>
+              <p>Does the custome know their daily itinerary?<p>
+            </div>
+            <div class="story-item">
+              <h5>5. Post-travel</h5>
+              <p>How was their trip and can we book their next trip?<p>
+            </div>
+          </div>
+        </section>
+        <div>
+          <img src="img/PricelinePostbooking/PricelinePostbooking_story.jpg">
+        </div>
+      </article>
+      <article class="project-section">
+        <h2>Trip Overview</h2>
+        <p>I utilized the story mapping workshop output and created a dynamic content module that updated with the pertinent content depending on where the customer was in their trip journey.</p>
+        <img src="img/PricelinePostbooking/PricelinePostbooking_Header.jpg">
+      </article>
+      <article class="project-section">
+        <h2>Dynamic Content</h2>
+      </article>
+      <article class="project-section">
+        <h2>Product Component</h2>
+      </article>
+      <article class="project-section">
+        <h2>Cancellation Flow</h2>
+      </article>
+      <article class="project-section">
+        <h2>Full Design</h2>
+      </article>
+    </main>
   </body>
 </html>
