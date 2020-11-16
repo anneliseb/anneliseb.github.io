@@ -159,16 +159,25 @@ img {
   margin: 0 auto;
 }
 
+
+.project-section-header {
+	padding: 0 0 32px 0;
+}
+
 .project-section h2 {
   text-align: center;
   padding: 0 0 16px;
+}
+
+.project-section-header p {
+  padding: 0 0 8px 0;
 }
 
 .project-section-content {
   display: flex;
   flex-direction: row;
   gap: 32px;
-  padding: 40px 0 0;
+  padding: 0;
 }
 
 .data-container {
@@ -216,4 +225,10 @@ li {
 .story-item h5 {
 	padding-bottom: 8px;
 	margin: 0;
+}
+
+.project-section-reflection {
+	background-color: #f8f8f8;
+	margin: 0 auto;
+	padding: 1rem;
 }
