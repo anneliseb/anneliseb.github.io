@@ -67,6 +67,27 @@ p {
  	padding: 0;
 }
 
+
+button {
+	background-color: #fff;
+	border: 1px solid black;
+	border-radius: 4px;
+	padding: 16px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 40px;
+	font-family: 'Mulish', sans-serif;
+	font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+button:hover {
+	border: 2px solid black;
+}
+
 /*************************
 Header
 **************************/
@@ -180,6 +201,7 @@ img {
   padding: 0;
 }
 
+
 .data-container {
   padding: 24px;
   margin: 0 auto;
@@ -231,4 +253,75 @@ li {
 	background-color: #f8f8f8;
 	margin: 0 auto;
 	padding: 1rem;
+}
+
+/*************************
+Project
+**************************/
+
+.carousel-container {
+	display: flex;
+	flex-flow: column;
+	overflow-x: auto;
+}
+
+.carousel-slide {
+	display: flex;
+	flex-flow: row;
+	background-color: #F5F4F6;
+	padding: 32px;
+}
+
+
+.carousel-slide .flex-left {
+	width: 35%;
+	margin-right: 64px;
+}
+
+.carousel-slide .flex-right {
+	width: 65%;
+	flex-flow: row nowrap;
+}
+
+.carousel-slide p {
+	padding-top: 8px;
+}
+
+
+
+
+#carouselExampleControls .carousel-item {
+	background-color: #F5F4F6;
+	padding: 32px 48px;
+}
+
+
+#carouselExampleControls .carousel-item .left {
+	float: left;
+}
+
+#carouselExampleControls .carousel-item .right {
+	float: right;
+}
+
+#carouselExampleControls .carousel-item:after {
+	content: "";
+  display: table;
+  clear: both;
+}
+
+.carousel-item p {
+	padding-top: 8px;
+}
+
+
+
+
+
+#carouselExampleControls .carousel-control-prev {
+	width: 48px;
+}
+
+#carouselExampleControls .carousel-control-next {
+	width: 48px;
 }
