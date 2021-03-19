@@ -304,11 +304,7 @@ Project
 	float: right;
 }
 
-#carouselExampleControls .carousel-item:after {
-	content: "";
-  display: table;
-  clear: both;
-}
+
 
 .carousel-item p {
 	padding-top: 8px;
