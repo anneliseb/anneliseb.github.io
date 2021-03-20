@@ -292,16 +292,22 @@ Project
 
 #carouselExampleControls .carousel-inner {
 	background-color: #F5F4F6;
-	padding: 32px 48px;
+	padding: 32px 56px;
+}
+
+.carousel-item.active {
+    display: flex;
+    justify-content: center;
 }
 
 
 #carouselExampleControls .carousel-item .left {
-	float: left;
+	width: 40%;
+	margin-right: 48px;
 }
 
 #carouselExampleControls .carousel-item .right {
-	float: right;
+	width: 60%
 }
 
 
