@@ -259,72 +259,39 @@ li {
 Project
 **************************/
 
-.carousel-container {
-	display: flex;
-	flex-flow: column;
-	overflow-x: auto;
-}
 
-.carousel-slide {
-	display: flex;
-	flex-flow: row;
-	background-color: #F5F4F6;
-	padding: 32px;
-}
-
-
-.carousel-slide .flex-left {
-	width: 35%;
-	margin-right: 64px;
-}
-
-.carousel-slide .flex-right {
-	width: 65%;
-	flex-flow: row nowrap;
-}
-
-.carousel-slide p {
-	padding-top: 8px;
-}
-
-
-
-
-#carouselExampleControls .carousel-inner {
+#carouselExampleControls-1 .carousel-inner, #carouselExampleControls-2 .carousel-inner, #carouselExampleControls-3 .carousel-inner {
 	background-color: #F5F4F6;
 	padding: 32px 56px;
+	margin-bottom: 40px;
+	height: 536px;
 }
 
 .carousel-item.active {
     display: flex;
     justify-content: center;
+		align-items: flex-start;
 }
 
-
-#carouselExampleControls .carousel-item .left {
+#carouselExampleControls-1 .carousel-item .left, #carouselExampleControls-2 .carousel-item .left, #carouselExampleControls-3 .carousel-item .left{
 	width: 40%;
 	margin-right: 48px;
 }
 
-#carouselExampleControls .carousel-item .right {
+#carouselExampleControls-1 .carousel-item .right, #carouselExampleControls-2 .carousel-item .right, #carouselExampleControls-3 .carousel-item .right{
 	width: 60%
 }
-
 
 
 .carousel-item p {
 	padding-top: 8px;
 }
 
-
-
-
-
-#carouselExampleControls .carousel-control-prev {
+#carouselExampleControls-1 .carousel-control-prev, #carouselExampleControls-2 .carousel-control-prev, #carouselExampleControls-3 .carousel-control-prev {
 	width: 48px;
 }
 
-#carouselExampleControls .carousel-control-next {
+#carouselExampleControls-1 .carousel-control-next, #carouselExampleControls-2 .carousel-control-next, #carouselExampleControls-3 .carousel-control-next {
 	width: 48px;
 }
 
