@@ -70,7 +70,7 @@ p {
 
 button {
 	background-color: #fff;
-	border: 1px solid black;
+	border: 2px solid black;
 	border-radius: 4px;
 	padding: 16px 20px;
 	text-align: center;
@@ -85,7 +85,10 @@ button {
 }
 
 button:hover {
+	background-color: #000;
+	color: #fff;
 	border: 2px solid black;
+	cursor: pointer;
 }
 
 /*************************
@@ -151,7 +154,7 @@ img {
 
 .project-container {
   overflow: auto;
-  padding: 40px 32px 80px;
+  padding: 40px 32px 88px;
 	margin: 0 auto;
   max-width: 1024px;
 }
@@ -192,6 +195,21 @@ img {
 
 .project-section-header p {
   padding: 0 0 8px 0;
+}
+
+.project-content {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+div, iframe {
+	display: block;
+	margin: 0 auto;
+}
+
+iframe {
+	margin-top: 40px;
 }
 
 .project-section-content {
@@ -255,10 +273,16 @@ li {
 	padding: 1rem;
 }
 
+
+
 /*************************
-Project
+Carousels
 **************************/
 
+.carousels h3 {
+	text-align: center;
+	padding: 0 0 24px 0;
+}
 
 #carouselExampleControls-1 .carousel-inner, #carouselExampleControls-2 .carousel-inner, #carouselExampleControls-3 .carousel-inner {
 	background-color: #F5F4F6;
