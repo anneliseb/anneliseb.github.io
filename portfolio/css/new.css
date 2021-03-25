@@ -157,7 +157,7 @@ Project
 }
 
 .project-section-gray {
-	background-color: #f2f4f6;
+	background-color: #F5F4F6;
 	margin: 80px 0 0;
 }
 
@@ -176,6 +176,10 @@ img {
   height: auto;
   margin: 0;
   padding: 0;
+}
+
+.img-border {
+	border: 1px solid #ccc;
 }
 
 
@@ -254,9 +258,47 @@ ul {
   padding: 0;
 }
 
-li {
+ul li {
   line-height: 24px;
   padding: 8px 0 0;
+}
+
+
+ol {
+	list-style: none;
+	counter-reset: circle-counter;
+  margin: 0;
+  padding: 0;
+	display: grid;
+	grid-gap: 20px;
+}
+
+ol li {
+	counter-increment: circle-counter;
+	display: grid;
+	grid-template-columns: 0 1fr;
+	grid-gap: 64px;
+	align-items: start;
+	font-size: 20px;
+	line-height: 32px;
+
+}
+
+ol li::before {
+	content: counter(circle-counter);
+	width: 48px;
+	height: 48px;
+	border: 1px solid #ccc;
+	border-radius: 50%;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 24px;
+	text-align: center;
+	padding-top: 10px;
+}
+
+.project-section-results h2 {
+	padding-bottom: 32px;
 }
 
 .story {
