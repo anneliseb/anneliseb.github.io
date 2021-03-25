@@ -68,29 +68,6 @@ p {
 }
 
 
-button {
-	background-color: #fff;
-	border: 2px solid black;
-	border-radius: 4px;
-	padding: 16px 20px;
-	text-align: center;
-	text-decoration: none;
-	display: block;
-	margin: 0 auto;
-	margin-bottom: 40px;
-	font-family: 'Mulish', sans-serif;
-	font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-}
-
-button:hover {
-	background-color: #000;
-	color: #fff;
-	border: 2px solid black;
-	cursor: pointer;
-}
-
 /*************************
 Header
 **************************/
@@ -144,6 +121,38 @@ nav {
 Project
 **************************/
 
+.project-container {
+  overflow: auto;
+  padding: 40px 0;
+	margin: 0 auto;
+}
+
+.overview {
+  padding: 0 32px 24px;
+  margin: 0 auto;
+	max-width: 1024px;
+}
+
+.project-section {
+  padding: 80px 32px 0;
+  margin: 0 auto;
+	max-width: 1024px;
+}
+
+.project-section-gray {
+	background-color: #f2f4f6;
+	margin: 80px 0 0;
+}
+
+.project-section-reflection {
+	max-width: 1024px;
+  margin: 0 auto;
+  padding: 40px 32px;
+}
+
+.project-section-reflection p {
+	padding: 0 0 8px;
+}
 
 img {
   width: calc(100% / 1);
@@ -152,21 +161,11 @@ img {
   padding: 0;
 }
 
-.project-container {
-  overflow: auto;
-  padding: 40px 32px 88px;
-	margin: 0 auto;
-  max-width: 1024px;
-}
 
 .project-container h1 {
   text-align: center;
 }
 
-.overview {
-  padding: 0 0 24px;
-  margin: 0 auto;
-}
 
 .overview-item {
   padding: 48px 0 0;
@@ -175,11 +174,6 @@ img {
 
 .overview-item h4 {
   padding: 0 0 8px;
-  margin: 0 auto;
-}
-
-.project-section {
-  padding: 80px 0 0;
   margin: 0 auto;
 }
 
@@ -193,6 +187,11 @@ img {
   padding: 0 0 16px;
 }
 
+.project-section-gray h2 {
+  text-align: center;
+  padding: 0 0 16px;
+}
+
 .project-section-header p {
   padding: 0 0 8px 0;
 }
@@ -201,6 +200,7 @@ img {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
+	gap: 40px;
 }
 
 div, iframe {
@@ -208,9 +208,6 @@ div, iframe {
 	margin: 0 auto;
 }
 
-iframe {
-	margin-top: 40px;
-}
 
 .project-section-content {
   display: flex;
@@ -267,11 +264,6 @@ li {
 	margin: 0;
 }
 
-.project-section-reflection {
-	background-color: #f8f8f8;
-	margin: 0 auto;
-	padding: 1rem;
-}
 
 
 
