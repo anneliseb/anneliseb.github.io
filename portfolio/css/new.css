@@ -196,16 +196,17 @@ img {
   padding: 0 0 8px 0;
 }
 
+
+div, iframe {
+	display: block;
+	margin: 0 auto;
+}
+
 .project-content {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
 	gap: 40px;
-}
-
-div, iframe {
-	display: block;
-	margin: 0 auto;
 }
 
 
