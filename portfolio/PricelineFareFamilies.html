@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Annelise Bryda | UX/UI Designer</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/new.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@500;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+       <nav>
+        <a href=index.html class="logo">Annelise Bryda</a>
+            <a href="https://www.linkedin.com/in/annelise-bryda-3a91ab20/" target="_blank"><img src="img/linkedin.png" alt="Linkedin logo" class="social-icon"></a>
+            <a href="https://www.instagram.com/annelisebryda/" target="_blank"><img src="img/instagram.png" alt="Instagram logo" class="social-icon"></a>
+        </nav>
+    </header>
+    <main class="project-container">
+      <article class="overview">
+        <h1>Priceline Fare Brands</h1>
+          <section class="overview-item">
+              <h4>Background</h4>
+              <p>Branded fares are when airlines group a bunch of ancillaries (checked bag, WIFI, etc.) together into a fare. The higher the fare, the more ancillaries are included in your ticket.</p>
+              <p>Why do the airlines do this? On average worldwide, airlines only make a revenue of $6/passenger because costs are so high (eg. fuel). By charging for ancillaries and creating diffent types of fares, airlines can keep the base price down, meeting the need of customers who are transacting based on low price. If customers choose to, they can pay extra for a higher fare with more included in the flight.</p>
+              <img class="img-small" src="img/Priceline_FareBrands/Priceline_FareBrands_Explained.png">
+            </section>
+            <section class="overview-item">
+              <h4>Problem</h4>
+              <p>Priceline was working with their top three airline partners, Delta, United, and American in order to sell fare brands on Priceline. A key problem to solve was each airline’s fare brands are different making it difficult for the custmer shopping on an OTA like Priceline, where they have the opportunity to compare hundreds of flights.</p>
+            </section>
+            <section class="overview-item">
+              <h4>Goal</h4>
+              <p>The main goal of Priceline’s air business and supply team was to continue to maintain strong partnerships with the airline partners and possibly open up contract negotiations for increased margins when selling higher fares. Technology needed an easy way to test and turn on different fares and design’s goal was to come up with a templated approach that would allow us to roll out fares for many different airlines so that it made since for the customers.</p>
+            </section>
+            <section class="overview-item">
+              <h4>Team</h4>
+              <p>My role was senior product designer. I partnered closely with two different product managers and a full-stack technology team. Our key staleholders were the air business team and Travelport, the GDS (global distribution system) that our APIs connected with.</p>
+            </section>
+        </article>
+        <article class="project-section">
+          <div class="project-section-header">
+            <h2>Why do customers choose certain fares?</h2>
+            <p>I launched a survey with the general public to begin to understand which ancillaries are importand to customers, and why they might consider one fare over another.</p>
+          </div>
+          <section class="project-section-content">
+            <div class="data-container">
+              <h4>Which of the following do you expect to be included in the price of the ticket?</h4>
+              <ul>
+                <li>85% Carry-on bag</li>
+                <li>73% Snack</li>
+                <li>68% Non-alcoholic beverage</li>
+                <li>60% Checked bag</li>
+                <li>59% In-seat entertainment</li>
+                <li>54% Ability to choose seat</li>
+              </ul>
+            </div>
+            <div class="data-container">
+              <h4>What is most important to you when flying? Select one.</h4>
+              <ul>
+                <li>31% Carry-on bag included</li>
+                <li>23% Checked bag included</li>
+                <li>11% Free WIFI</li>
+                <li>8% In-seat entertainment</li>
+                <li>4% Option to upgrade seat</li>
+                <li>>2% Free snack and priority boarding for a fee</li>
+              </ul>
+            </div>
+          </section>
+        </article>
+        <article class="project-section">
+          <div class="project-section-header">
+            <h2>When and how do customers select a fare?</h2>
+            <p>Below are two different user flows. In the first, the customer is shown fare options later in the funnel and the latter the customer is shown fare options earleir in the funnel. The user flows were a useful communication tool with the engineers. I was able to find out due to where the price confirmation call was being made, we had to offer fare brands in the chackout applciation.</p>
+          </div>
+          <div class="project-content">
+            <img src="img/Priceline_FareBrands/Priceline_FareBrands_Flow2.png">
+            <img src="img/Priceline_FareBrands/Priceline_FareBrands_Flow1.png">
+            <img src="img/Priceline_FareBrands/Priceline_FareBrands_Prototype1.png">
+            <img src="img/Priceline_FareBrands/Priceline_FareBrands_Prototype2.png">
+          <section class="project-section-content">
+            <div class="data-container">
+              <h4>User Insight #1</h4>
+              <p>Customers who were less likely to upgrade their flight preferred to see upgrade options later in the funnel because they could easily be skpped. For customers more likely to upgrade, seeing other fare options within checkout was to late in the experience.</p>
+            </div>
+            <div class="data-container">
+              <h4>User Insight #2</h4>
+              <p>Customers preferred to see upgrade pricing as incremental vs total price. That way they did not have to do the math themselves to understad how much more money the upgrade was from the base fare.</p>
+            </div>
+          </section>
+          <p>Going into the prototype creation, I knew from our BE engineers that we had to at first build out the experience with fare brands in the checkout application. Feedback from the usability tests gave us the confidence that the BE teams should begin the work to add a price confirmation call to the search application. This meant we would launch in the checkout application, and have the flexiblity to move the fare brand experience up the funnel at a later date.</p>
+          </div>
+        </article>
+        <article class="project-section">
+          <div class="project-section-header">
+            <h2>Initial Design for Delta Air Lines</h2>
+            <p>Fare brands was launched airline by airline focusing first on Priceline’s three top partners: Delta, American, and United. Out of those three, Delta was the ifrst to launch. First, basic economy fares were turned on and once that was stable, all fare brands were turned on for Delta.</p>
+          </div>
+          <img src="img/Priceline_FareBrands/Priceline_FareBrands_Delta.png">
+        </article>
+        <article class="project-section">
+          <div class="project-section-results">
+            <h2>Results for Delta Air Lines</h2>
+            <ol>
+              <li>The initial launch of just basic economy fares saw a 1.7% lift in conversion.</li>
+              <li>Out of all the customers who book premium economy cabin tickets (Delta Comfort+) 65% of them were upgrading through fare brands in checkout, and 35% were from searching premium economy on the hp. (Opposed to previously 100% from premium economy searches).</li>
+            </ol>
+          </div>
+        </article>
+        <article class="project-section">
+          <div class="project-section-header">
+            <h2>Moving Fare Brands to Search App</h2>
+            <p>Fare brands was launched airline by airline focusing first on Priceline’s three top partners: Delta, American, and United. Out of those three, Delta was the ifrst to launch. First, basic economy fares were turned on and once that was stable, all fare brands were turned on for Delta.</p>
+          </div>
+          <img src="img/Priceline_FareBrands/Priceline_FareBrands_DetailsExplorations.png">
+        </article>
+        <article class="project-section">
+          <div class="project-section-header">
+            <h2>Iterative A/B Testing</h2>
+            <p>The Air team and I continued to iterate on the experience as well as turning on more airline’s fare brands. Below is an example of a user testing clip of fare brands and an A/B test that came of it.</p>
+          </div>
+          <div class="project-content">
+            <div>
+              <iframe width="656" height="369" src="https://www.youtube.com/embed/uhpz6T8kFxE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <h5>Hypothesis</h5>
+            <p>As a customer I may be interested in upgrading to a higher fare if it's not too much money, but I don't want to upgrade $4,000 from a $1,000 flight. Because prices vary so much, saying only show two fare brand options or three options is too static an option.</p>
+            <h5>Results</h5>
+            <p>300% of base price variant was most successful</p>
+            <p>Incremental bookings per day: 249</p>
+            <p>Incremental contribution per day: $4,600</p>
+            <div>
+              <h5>Default</h5>
+              <img class="img-small" src="img/Priceline_FareBrands/FareBrands_HideExpensive_Default.png">
+            </div>
+            <div>
+              <h5>Variant</h5>
+              <img class="img-small" src="img/Priceline_FareBrands/FareBrands_HideExpensive_Variant.png">
+            </div>
+          </div>
+        </article>
+        <article class="project-section-gray">
+          <div class="project-section-reflection">
+            <h2>Reflection</h2>
+            <p>A challenge of this project was managing the expectations and requirements of the airline partners.</P>
+            <p>A positive outcome of this project was having a wider understanding of our BE air technology and how the BE connects to the FE.</P>
+            <p>One thing I would have done differently is document user research better. Fare brands were worked on in multiple stages across 2 years and there were findings that got lost along the way.</P>
+          </div>
+        </article>
+    </main>
+  </body>
