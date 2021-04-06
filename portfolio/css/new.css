@@ -334,8 +334,21 @@ ol li::before {
 	margin: 0;
 }
 
+.two-column {
+    display: flex;
+    justify-content: center;
+		align-items: flex-start;
+}
 
 
+.two-column .item-left {
+	width: 75%;
+	margin-right: 24px;
+}
+
+.two-column .item-right {
+	width: 25%;
+}
 
 /*************************
 Carousels
