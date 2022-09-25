@@ -122,6 +122,10 @@ section .button{
   opacity: .8;
 }
 
+p a:link {
+  text-decoration: underline;
+}
+
 header {
   margin: 0 auto;
   padding: 16px 16px;
