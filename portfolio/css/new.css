@@ -158,6 +158,10 @@ Project
 	max-width: 1024px;
 }
 
+.project-text-section {
+	padding: 0 0 24px 0;
+}
+
 .project-section-gray {
 	background-color: #F5F4F6;
 	margin: 80px 0 0;
@@ -235,6 +239,14 @@ img {
 
 .project-section-header p {
   padding: 0 0 24px 0;
+}
+
+.project-section p {
+	padding: 0 0 8px 0;
+}
+
+.project-text-section h4 {
+	padding: 0 0 8px 0;
 }
 
 
