@@ -258,11 +258,11 @@ a:hover{
 }
 
 .grid .grid-item .grid-description h5{
-	font-size: 1.5rem;
-	line-height: 2rem;
+	font-size: 1.25rem;
+	line-height: 1.5rem;
 	font-weight: 500;
 	margin: 0 auto;
-	padding: 0;
+	padding: .5rem 0 0;
 }
 
 .grid .grid-item .grid-description h6{
@@ -270,7 +270,7 @@ a:hover{
 	line-height: 1.25rem;
 	font-weight: 500;
 	margin: 0 auto;
-	padding: .5rem 0 0;
+	padding: 0;
 }
 
 .grid .grid-item .grid-description hr{
