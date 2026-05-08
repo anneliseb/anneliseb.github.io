@@ -294,22 +294,22 @@ div, iframe {
 }
 
 /*************************
-Time Off Case Study
+Highlights Case Study
 **************************/
 
-.time-off-page {
+.highlights-page {
 	color: #000;
 	margin: 0 auto;
 	max-width: 1280px;
 	padding: 32px 32px 64px;
 }
 
-.time-off-hero {
+.highlights-hero {
 	margin: 0 auto;
 	text-align: center;
 }
 
-.time-off-tags {
+.highlights-tags {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 4px;
@@ -317,7 +317,7 @@ Time Off Case Study
 	margin: 0 auto 16px;
 }
 
-.time-off-tags span {
+.highlights-tags span {
 	background: #000;
 	color: #fff;
 	font-size: 10px;
@@ -327,51 +327,59 @@ Time Off Case Study
 	text-transform: uppercase;
 }
 
-.time-off-page h1,
-.time-off-page h2 {
+.highlights-page h1,
+.highlights-page h2 {
 	font-family: 'Libre Baskerville', serif;
 	font-weight: 700;
 }
 
-.time-off-page h1 {
+.highlights-page h1 {
 	font-size: 36px;
 	line-height: 48px;
 	padding: 0 0 12px;
 }
 
-.time-off-page h2 {
+.highlights-page h2 {
 	font-size: 24px;
 	line-height: 28px;
 	padding: 0 0 16px;
 	text-align: left;
 }
 
-.time-off-page p,
-.time-off-page li {
+.highlights-page p,
+.highlights-page li {
 	font-family: 'Lato', sans-serif;
 	font-size: 18px;
 	font-weight: 400;
 	line-height: 28px;
 }
 
-.time-off-showcase {
+.highlights-showcase {
 	margin: 48px auto 56px;
 	position: relative;
 }
 
-.time-off-showcase figure {
+.highlights-showcase figure {
 	margin: 0 auto;
 	max-width: 1000px;
 }
 
-.time-off-showcase img {
+.highlights-slide {
+	display: none;
+}
+
+.highlights-slide-active {
+	display: block;
+}
+
+.highlights-showcase img {
 	border: 1px solid #cfcfcf;
 	display: block;
 	margin: 0 auto;
 	width: 100%;
 }
 
-.time-off-showcase figcaption {
+.highlights-showcase figcaption {
 	background: #000;
 	color: #fff;
 	font-size: 14px;
@@ -381,7 +389,7 @@ Time Off Case Study
 	text-align: center;
 }
 
-.time-off-arrow {
+.highlights-arrow {
 	background: #000;
 	border: 0;
 	border-radius: 2px;
@@ -397,15 +405,15 @@ Time Off Case Study
 	
 }
 
-.time-off-arrow-left {
+.highlights-arrow-left {
 	left: -8px;
 }
 
-.time-off-arrow-right {
+.highlights-arrow-right {
 	right: -8px;
 }
 
-.time-off-two-column {
+.highlights-two-column {
 	display: grid;
 	gap: 56px;
 	grid-template-columns: 1fr;
@@ -413,32 +421,32 @@ Time Off Case Study
 	padding: 0 0 48px;
 }
 
-.time-off-two-column ul,
-.time-off-content ul {
+.highlights-two-column ul,
+.highlights-content ul {
 	list-style: disc;
 	padding: 0 0 0 18px;
 }
 
-.time-off-two-column li,
-.time-off-content li {
+.highlights-two-column li,
+.highlights-content li {
 	padding: 0 0 4px;
 }
 
-.time-off-content {
+.highlights-content {
 	margin: 0 auto;
 	padding: 0 0 40px;
 }
 
 @media screen and (min-width: 768px) {
-	.time-off-two-column {
+	.highlights-two-column {
 		grid-template-columns: 1fr 1fr;
 	}
 
-	.time-off-arrow-left {
+	.highlights-arrow-left {
 		left: 0px;
 	}
 
-	.time-off-arrow-right {
+	.highlights-arrow-right {
 		right: 0px;
 	}
 }

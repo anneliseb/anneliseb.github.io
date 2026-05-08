@@ -18,9 +18,9 @@
             <a href="https://www.instagram.com/annelisebryda/" target="_blank"><img src="img/instagram.png" alt="Instagram logo" class="social-icon"></a>
         </nav>
     </header>
-    <main class="time-off-page">
-      <section class="time-off-hero">
-        <div class="time-off-tags">
+    <main class="highlights-page">
+      <section class="highlights-hero">
+        <div class="highlights-tags">
           <span>Enterprise</span>
           <span>User Research</span>
           <span>Internal Tool</span>
@@ -28,15 +28,23 @@
         <h1>Justworks Time Off Internal</h1>
         <p>Transitioning 100% of CSO to a new internal experience, Customer Central, for time off tickets.</p>
       </section>
-      <section class="time-off-showcase" aria-label="Customer Central Time Off workspace">
-        <button class="time-off-arrow time-off-arrow-left" aria-label="Previous image">&#8249;</button>
-        <figure>
+      <section class="highlights-showcase" aria-label="Customer Central Time Off workspace">
+        <button class="highlights-arrow highlights-arrow-left" aria-label="Previous image" onclick="plusHighlightSlides(-1)">&#8249;</button>
+        <figure class="highlights-slide highlights-slide-active">
           <img src="img/JustworksTimeOffInternal/JustworksTimeOffInternal1.png" alt="Customer Central Time Off workspace">
           <figcaption>Company Time Off workspace within Customer Central, a new internal tool. While most companies had 1-3 policies, EOR companies as well as companies with complex tenure could have upwards of 40 policies.</figcaption>
         </figure>
-        <button class="time-off-arrow time-off-arrow-right" aria-label="Next image">&#8250;</button>
+        <figure class="highlights-slide">
+          <img src="img/JustworksTimeOffInternal/JustworksTimeOffInternal2.png" alt="Customer Central policy details page">
+          <figcaption>Policy details page with policy configuration and list of members assigned to the policy. Member location helps HR Consulting answer company’s questions regarding compliance.</figcaption>
+        </figure>
+        <figure class="highlights-slide">
+          <img src="img/JustworksTimeOffInternal/JustworksTimeOffInternal3.png" alt="Customer Central policy request details">
+          <figcaption>Time off request table and details of request.</figcaption>
+        </figure>
+        <button class="highlights-arrow highlights-arrow-right" aria-label="Next image" onclick="plusHighlightSlides(1)">&#8250;</button>
       </section>
-      <section class="time-off-two-column">
+      <section class="highlights-two-column">
         <div>
           <h2>My Role</h2>
           <ul>
@@ -60,11 +68,11 @@
           </ul>
         </div>
       </section>
-      <section class="time-off-content">
+      <section class="highlights-content">
         <h2>Strategic Challenge</h2>
         <p>Justworks' antiquated internal tools system, CSTools, was not scalable and was rife with technical debt. A new internal tool, called Customer Central, was being developed with a goal to move data and workflows out of CSTools in an organized and thoughtful manner. The Time Off team was undergoing a replatform including a brand new BE service. A decision was made to not connect this new service to CSTools and contribute to its longevity, requiring all time off data and workflows to be moved to Customer Central. I was tasked with leading the design migration to Customer Central, ensuring 100% data parity while managing the change for a 250+ person Customer Success Organization.</p>
       </section>
-      <section class="time-off-content">
+      <section class="highlights-content">
         <h2>The Results</h2>
         <ul>
           <li>Successfully turned off Time Off in CSTools (old internal tool).</li>
@@ -72,7 +80,7 @@
           <li>Moved 4 workflows from Internal to self-service for the customer including editing a time off policy and editing a time off request.</li>
         </ul>
       </section>
-      <section class="time-off-content">
+      <section class="highlights-content">
         <h2>Key Decisions &amp; Trade-offs</h2>
         <ul>
           <li>Strategic Scope Reduction: I advocated for the removal of 'Policy Editing' capabilities, a controversial but necessary move to shift the product toward a self-service model. This decision reduced frontend complexity and aligned with our long-term goal of empowering customers through self-service. While CSO was nervous to lose this capability, I highlighted the new customer-facing policy editing should greatly reduce tickets asking for help editing a policy.</li>
@@ -80,5 +88,23 @@
         </ul>
       </section>
     </main>
+    <script>
+      var highlightSlideIndex = 1;
+
+      function plusHighlightSlides(n) {
+        showHighlightSlide(highlightSlideIndex += n);
+      }
+
+      function showHighlightSlide(n) {
+        var i;
+        var slides = document.getElementsByClassName("highlights-slide");
+        if (n > slides.length) {highlightSlideIndex = 1}
+        if (n < 1) {highlightSlideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].className = slides[i].className.replace(" highlights-slide-active", "");
+        }
+        slides[highlightSlideIndex - 1].className += " highlights-slide-active";
+      }
+    </script>
   </body>
 </html>
