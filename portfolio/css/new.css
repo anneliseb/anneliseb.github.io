@@ -284,6 +284,165 @@ div, iframe {
   line-height: 32px;
 }
 
+.case-study-image {
+	background-color: #fff;
+	box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.08), 0px 4px 8px 0px rgba(0, 0, 0, 0.08);
+}
+
+.case-study-principles {
+	align-items: stretch;
+}
+
+/*************************
+Time Off Case Study
+**************************/
+
+.time-off-page {
+	color: #000;
+	margin: 0 auto;
+	max-width: 1280px;
+	padding: 32px 32px 64px;
+}
+
+.time-off-hero {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.time-off-tags {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 4px;
+	justify-content: center;
+	margin: 0 auto 16px;
+}
+
+.time-off-tags span {
+	background: #000;
+	color: #fff;
+	font-size: 10px;
+	font-weight: 700;
+	line-height: 16px;
+	padding: 2px 6px;
+	text-transform: uppercase;
+}
+
+.time-off-page h1,
+.time-off-page h2 {
+	font-family: 'Libre Baskerville', serif;
+	font-weight: 700;
+}
+
+.time-off-page h1 {
+	font-size: 36px;
+	line-height: 48px;
+	padding: 0 0 12px;
+}
+
+.time-off-page h2 {
+	font-size: 24px;
+	line-height: 28px;
+	padding: 0 0 16px;
+	text-align: left;
+}
+
+.time-off-page p,
+.time-off-page li {
+	font-family: 'Lato', sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 28px;
+}
+
+.time-off-showcase {
+	margin: 48px auto 56px;
+	position: relative;
+}
+
+.time-off-showcase figure {
+	margin: 0 auto;
+	max-width: 1000px;
+}
+
+.time-off-showcase img {
+	border: 1px solid #cfcfcf;
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.time-off-showcase figcaption {
+	background: #000;
+	color: #fff;
+	font-size: 14px;
+	line-height: 20px;
+	margin: 0 auto;
+	padding: 16px 48px;
+	text-align: center;
+}
+
+.time-off-arrow {
+	background: #000;
+	border: 0;
+	border-radius: 2px;
+	color: #fff;
+	font-size: 40px;
+	height: 48px;
+	line-height: 40px;
+	padding: 0;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 40px;
+	
+}
+
+.time-off-arrow-left {
+	left: -8px;
+}
+
+.time-off-arrow-right {
+	right: -8px;
+}
+
+.time-off-two-column {
+	display: grid;
+	gap: 56px;
+	grid-template-columns: 1fr;
+	margin: 0 auto;
+	padding: 0 0 48px;
+}
+
+.time-off-two-column ul,
+.time-off-content ul {
+	list-style: disc;
+	padding: 0 0 0 18px;
+}
+
+.time-off-two-column li,
+.time-off-content li {
+	padding: 0 0 4px;
+}
+
+.time-off-content {
+	margin: 0 auto;
+	padding: 0 0 40px;
+}
+
+@media screen and (min-width: 768px) {
+	.time-off-two-column {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.time-off-arrow-left {
+		left: 0px;
+	}
+
+	.time-off-arrow-right {
+		right: 0px;
+	}
+}
+
 ul {
   list-style: none;
   margin: 0;
