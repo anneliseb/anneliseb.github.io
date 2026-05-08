@@ -177,10 +177,11 @@ nav {
 Grid
 **************************/
 .intro {
-	font-size: 2rem;
-	line-height: 3rem;
-	font-weight: 500;
-	padding: 5rem 2.5rem 2.5rem;
+	font-family: 'Lato', sans-serif;
+	font-size: 1.5rem;
+	line-height: 2rem;
+	font-weight: 400;
+	padding: 3rem 2.5rem 4rem;
 	max-width: 1280px;
 }
 
@@ -263,6 +264,95 @@ Grid
 
   .highlight-grid {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.case-studies {
+  margin: 0 auto;
+  padding: 0 2rem 3rem;
+  max-width: 1280px;
+}
+
+.case-studies h2 {
+  margin: 0;
+  padding: 0 0 1.5rem;
+}
+
+.case-study-list {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.case-study-card {
+  background: #f8f8f8;
+  margin: 0;
+  padding: 1.5rem;
+}
+
+.case-study-card a {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.case-study-img {
+  flex: 0 0 48%;
+}
+
+.case-study-img img {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.08), 0px 4px 8px 0px rgba(0, 0, 0, 0.08);
+}
+
+.case-study-description {
+  flex: 1;
+}
+
+.case-study-description h3 {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  padding: 0 0 .5rem;
+}
+
+.case-study-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .25rem;
+  padding: 0 0 .75rem;
+}
+
+.case-study-tags span {
+  background: #000;
+  color: #fff;
+  font-size: .625rem;
+  font-weight: 700;
+  line-height: 1rem;
+  padding: .125rem .375rem;
+  text-transform: uppercase;
+}
+
+.case-study-description p {
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .case-study-card {
+    padding: 2rem;
+  }
+
+  .case-study-card a {
+    align-items: center;
+    flex-direction: row;
+    gap: 3rem;
   }
 }
 
