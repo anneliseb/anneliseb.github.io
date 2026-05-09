@@ -478,10 +478,11 @@ Case Study Pages
 .case-tags span,
 .case-callout-label {
 	background: #000;
+	border-radius: 2px;
 	color: #fff;
 	font-family: 'Lato', sans-serif;
 	font-size: 10px;
-	font-weight: 600;
+	font-weight: 700;
 	line-height: 16px;
 	padding: 2px 6px;
 	text-transform: uppercase;
@@ -516,7 +517,7 @@ Case Study Pages
 .case-page h4 {
 	font-family: 'Lato', sans-serif;
 	font-size: 16px;
-	font-weight: 500;
+	font-weight: 700;
 	line-height: 24px;
 	margin: 16px 0 0;
 	padding: 0;
@@ -628,6 +629,10 @@ Case Study Pages
 	width: 100%;
 }
 
+.case-image-shadow {
+	box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.08), 0px 4px 8px 0px rgba(0, 0, 0, 0.08);
+}
+
 .case-image-small {
 	max-width: 760px;
 }
@@ -652,7 +657,7 @@ Case Study Pages
 	font-family: 'Lato', sans-serif;
 	font-size: 18px;
 	line-height: 24px;
-	font-weight: 600;
+	font-weight: 700;
 }
 
 .case-survey-cards .case-card ul {
@@ -697,9 +702,13 @@ Case Study Pages
 .case-result-item {
 	align-items: center;
 	display: grid;
-	gap: 24px;
-	grid-template-columns: 72px 1fr;
-	margin: 0 0 24px;
+	gap: 20px;
+	grid-template-columns: 80px 1fr;
+	margin: 0 0 20px;
+}
+
+.case-section-copy p + .case-result-item {
+	margin-top: 20px;
 }
 
 .case-result-item span {
@@ -708,21 +717,21 @@ Case Study Pages
 	color: #fff;
 	display: block;
 	font-family: 'Lato', sans-serif;
-	font-size: 24px;
-	font-weight: 500;
-	line-height: 64px;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 56px;
 	text-align: center;
 }
 
 .case-result-item p {
-	font-weight: 500;
+	font-weight: 700;
 	margin: 0;
 }
 
 .case-outcomes {
 	background: #111;
 	color: #fff;
-	margin: 32px -48px 0;
+	margin: 32px calc(50% - 50vw) 0;
 	padding: 48px;
 }
 
