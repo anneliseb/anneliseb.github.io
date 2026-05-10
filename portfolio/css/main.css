@@ -617,8 +617,7 @@ About
 
 .about {
 	margin: 0 auto;
-	padding: 1.5rem 1rem;
-	background-color: #f8f8f8;
+	padding: 1rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -631,34 +630,37 @@ About
 @media screen and (min-width: 1024px) {
   .about {
 		margin: 0 auto;
-    padding: 4rem 3rem;
+    padding: 40px 32px 80px;
 		max-width: 1280px;
   }
 }
 
 
 .about-description {
-  margin: 0 1rem;
-	padding-bottom: 2rem;
+  margin: 0 auto;
+  padding-bottom: 0;
 }
 
 
 
 .about h1 {
   color: #000;
-	font-size: 2rem;
-	line-height: 2.5rem;
+  font-family: 'Libre Baskerville', serif;
+	font-size: 24x;
+	line-height: 28px;
 	font-weight: 700;
   text-align: center;
-  margin: 0 0 1.5rem 0;
+  margin: 0 0 24px 0;
 }
 
 .about p {
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
   color: #000;
-  margin: 0;
-  padding: .5rem 0rem;
+  margin: 0 0 16px;
+  padding: 0 72px;
 }
 
 
@@ -668,61 +670,73 @@ Slidshow
 
 /* Slideshow container */
 .slideshow-container {
-  position: relative;
-  margin: auto;
-}
-
-.mySlides img {
-	margin: 0;
-	padding: 1rem 0;
+  --slideshow-arrow-gap: 16px;
+  --slideshow-arrow-width: 40px;
+  align-items: center;
+  display: grid;
+  grid-template-columns: var(--slideshow-arrow-width) var(--slideshow-arrow-gap) minmax(0, 1fr) var(--slideshow-arrow-gap) var(--slideshow-arrow-width);
+  margin: 0 auto 16px;
 }
 
 /* Hide the images by default */
 .mySlides {
   display: none;
+  grid-column: 3;
+  grid-row: 1;
+  width: 100%;
+}
+
+.mySlides img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
 }
 
 /* Next & previous buttons */
-.prev {
+.prev,
+.next {
+  align-items: center;
+  background: #000;
+  border-radius: 2px;
   cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  transition: 0.5s ease;
-  border-radius: 0 3px 3px 0;
+  display: flex;
+  height: 48px;
+  justify-content: center;
+  padding: 0;
+  position: relative;
+  transition: background-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
   user-select: none;
+  width: 40px;
 }
 
-.next {
-	  cursor: pointer;
-	  position: absolute;
-	  top: 50%;
-	  width: auto;
-	  margin-top: -22px;
-	  padding: 16px;
-	  color: white;
-	  font-weight: bold;
-	  font-size: 20px;
-	  transition: 0.5s ease;
-	  border-radius: 0 3px 3px 0;
-	  user-select: none;
-	}
+.prev {
+  grid-column: 1;
+  grid-row: 1;
+}
 
 /* Position the "next button" to the right */
 .next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+  grid-column: 5;
+  grid-row: 1;
 }
 
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+.prev:hover,
+.prev:focus,
+.next:hover,
+.next:focus {
+  background: #333;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.18);
+  transform: scale(1.04);
+}
+
+.prev:focus,
+.next:focus {
+  outline: 2px solid #000;
+  outline-offset: 3px;
 }
 
 
@@ -739,7 +753,7 @@ Slidshow
 }
 
 .active, .dot:hover {
-  background-color: #666;
+  background-color: #000;
 }
 
 /* Fading animation */
