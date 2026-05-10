@@ -243,15 +243,16 @@ Grid
   text-underline-offset: 4px;
 }
 
-.highlight-tags {
+.project-tags {
   display: flex;
   flex-wrap: wrap;
   gap: .25rem;
   padding: 0 0 .75rem;
 }
 
-.highlight-tags span {
+.project-tags span {
   background: #000;
+  border-radius: 2px;
   color: #fff;
   font-size: .625rem;
   font-weight: 700;
@@ -331,23 +332,6 @@ Grid
   font-size: 1.25rem;
   line-height: 1.75rem;
   padding: 0 0 .5rem;
-}
-
-.case-study-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: .25rem;
-  padding: 0 0 .75rem;
-}
-
-.case-study-tags span {
-  background: #000;
-  color: #fff;
-  font-size: .625rem;
-  font-weight: 700;
-  line-height: 1rem;
-  padding: .125rem .375rem;
-  text-transform: uppercase;
 }
 
 .case-study-description p {
