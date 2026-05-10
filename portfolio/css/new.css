@@ -525,9 +525,9 @@ Case Study Pages
 
 .case-page p {
 	font-family: 'Lato', sans-serif;
-	font-size: 14px;
+	font-size: 18px;
 	font-weight: 400;
-	line-height: 20px;
+	line-height: 28px;
 }
 
 .case-page li {
@@ -590,6 +590,16 @@ Case Study Pages
 	line-height: 28px;
 }
 
+.case-section p,
+.case-section ul {
+	margin-bottom: 16px;
+}
+
+.case-section p:last-child,
+.case-section ul:last-child {
+	margin-bottom: 0;
+}
+
 .case-section-title {
 	text-align: left;
 }
@@ -616,6 +626,14 @@ Case Study Pages
 
 .case-section-subrow {
 	margin-top: 56px;
+}
+
+.case-copy-block {
+	margin-bottom: 80px;
+}
+
+.case-copy-block:last-child {
+	margin-bottom: 0;
 }
 
 .case-image-stack {
@@ -674,8 +692,13 @@ Case Study Pages
 	background: #000;
 	border-radius: 8px;
 	color: #fff;
-	margin: 32px 0 0;
+	margin: 24px 0 0;
 	padding: 16px;
+}
+
+.case-callout-full {
+	margin-top: 48px;
+	text-align: left;
 }
 
 .case-callout p,
@@ -732,7 +755,7 @@ Case Study Pages
 	background: #111;
 	color: #fff;
 	margin: 32px calc(50% - 50vw) 0;
-	padding: 48px;
+	padding: 48px 48px 80px;
 }
 
 .case-outcomes-content {
@@ -747,6 +770,12 @@ Case Study Pages
 .case-outcomes p,
 .case-outcomes li {
 	color: #fff;
+}
+
+	
+.case-outcomes h2 {
+	padding-bottom: 16px;
+
 }
 
 @media screen and (min-width: 768px) {

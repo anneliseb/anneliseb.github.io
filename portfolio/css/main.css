@@ -177,17 +177,17 @@ nav {
 Grid
 **************************/
 .intro {
-	font-family: 'Lato', sans-serif;
-	font-size: 1.5rem;
+	font-family: 'Libre Baskerville', serif;
+	font-size: 1.25rem;
 	line-height: 2rem;
 	font-weight: 400;
-	padding: 3rem 2.5rem 4rem;
+	padding: 40px 40px 72px;
 	max-width: 1280px;
 }
 
 .highlights {
   margin: 0 auto;
-  padding: 0 2rem 2rem;
+  padding: 0 32px 64px;
   max-width: 1280px;
 }
 
@@ -220,6 +220,7 @@ Grid
   margin: 0 0 1rem;
   padding: 0;
   box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.08), 0px 4px 8px 0px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 180ms ease;
 }
 
 .highlight-card h3 {
@@ -227,6 +228,19 @@ Grid
   font-size: 1.25rem;
   line-height: 1.75rem;
   padding: 0 0 .5rem;
+}
+
+.highlight-link:hover {
+  color: #000;
+}
+
+.highlight-link:hover img {
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.14);
+}
+
+.highlight-link:hover h3 {
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
 .highlight-tags {
@@ -258,10 +272,6 @@ Grid
 }
 
 @media screen and (min-width: 1024px) {
-  .highlights {
-    padding: 0 2rem 3rem;
-  }
-
   .highlight-grid {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -309,6 +319,7 @@ Grid
   margin: 0;
   padding: 0;
   box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.08), 0px 4px 8px 0px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 180ms ease;
 }
 
 .case-study-description {
@@ -344,13 +355,26 @@ Grid
   padding: 0;
 }
 
+.case-study-card a:hover {
+  color: #000;
+}
+
+.case-study-card a:hover img {
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.14);
+}
+
+.case-study-card a:hover h3 {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
 @media screen and (min-width: 768px) {
   .case-study-card {
     padding: 2rem;
   }
 
   .case-study-card a {
-    align-items: center;
+    align-items: flex-start;
     flex-direction: row;
     gap: 3rem;
   }
