@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Annelise Bryda | Product Design Leader</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/new.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700" rel="stylesheet">
   </head>
   <body>
             <header>
@@ -18,148 +18,240 @@
         </a>
       </nav>
     </header>
-    <main class="project-container">
-      <article class="overview">
-        <h1>Your Priceline Trip</h1>
-          <section class="overview-item">
-              <h4>Background</h4>
-              <p>Priceline had replatformed most of its FE applications, but one application had yet to be replatformed and that was the order confirmation application. Originally, the order confirmation page had been designed as a single template used by each product, air, hotel, and car. But over the years they got further and further from that original single design.</p>
-            </section>
-            <section class="overview-item">
-              <h4>Problem</h4>
-              <p>With a company initiative to grow the number of customers bundling products, Priceline was in need of an order confirmation experience that could take into account a customer booking a single product, or a customer booking 2+ products in the same order.</p>
-            </section>
-            <section class="overview-item">
-              <h4>Goal</h4>
-              <p>The goal was to provide the customer with a single, organized trip itinerary that helped them feel confident in their purchase and provided the necessary self-service tools should they require help. This would be done by building a single application of reusable common components in React, replacing the old angular pages</p>
-            </section>
-            <section class="overview-item">
-              <h4>Team</h4>
-              <p>My role was lead product designer. A junior designer worked with me during the first half of the project. The rest of the team consisted of a product manager and 4 FE developers. Our key partners were customer care, finance, and the product teams for the individual product verticals.</p>
-            </section>
-        </article>
-      <article class="project-section">
-        <div class="project-section-header">
-          <h2>Supporting data</h2>
-          <p>What insights were there to gleam from how customers were interacting with the current confirmation page? When did they return to to it and what did they interact with the most? How did this differ by product or advance purchase window?</p>
+    <main class="case-page">
+      <section class="case-hero">
+        <div class="project-tags">
+          <span>E-commerce</span>
+          <span>Systems Design</span>
+          <span>Replatform</span>
         </div>
-        <section class="project-section-content">
-          <div class="data-container">
-            <h4>Top clicked FAQ pages</h4>
-            <ul>
-              <li>1. Airline contact list</li>
-              <li>2. Change or cancel hotel rooms</li>
-              <li>3. Change or cancel airline tickets</li>
-              <li>4. Multi airline tickets</li>
-              <li>5. International phone numbers</li>
-            </ul>
-          </div>
-          <div class="data-container">
-            <h4>% of customers who return to the confirmation page</h4>
-            <ul>
-              <li>Packages 83%</li>
-              <li>Air 78%</li>
-              <li>Rental Car 61%</li>
-              <li>Hotel 51%</li>
-            </ul>
-          </div>
-        </section>
-      </article>
-      <article class="project-section">
-        <div class="project-section-header">
-          <h2>Customer journey</h2>
-          <p>Priceline’s user researcher and I partnered up and led a workshop to define the customers post booking journey. The group created a 5 chapter story and then for each chapter delved into what the customers mindset may be.</p>
-          <p>This exercise also clarified scope. The first 3 chapters of the story we defined as in scope and the last 2 chapters in the story were moved to out of scope.</p>
-        </div>
-        <section class="project-section-content">
-          <div class="story">
-            <div class="story-item">
-              <h5>1. Post-Booking</h5>
-              <p>Did the customers order go through and is it correct?<p>
-            </div>
-            <div class="story-item">
-              <h5>2. Plan</h5>
-              <p>Have plans changed or can we help with further plans?<p>
-            </div>
-            <div class="story-item">
-              <h5>3. Pre-travel</h5>
-              <p>What infrmation does the customer need?<p>
-            </div>
-            <div class="story-item">
-              <h5>4. Travel</h5>
-              <p>Does the custome know their daily itinerary?<p>
-            </div>
-            <div class="story-item">
-              <h5>5. Post-travel</h5>
-              <p>How was their trip and can we book their next trip?<p>
-            </div>
-          </div>
-        </section>
+        <h1>Priceline Post-Booking</h1>
+        <p>Unifying the order confirmation experience for single-product and multi-product bookings.</p>
+        <img class="case-hero-image case-image-shadow" src="img/PricelinePostbooking/PricelinePostbooking_Hero.png" alt="Priceline post-booking trip itinerary design">
+      </section>
+      <section class="case-meta">
         <div>
-          <img src="img/PricelinePostbooking/PricelinePostbooking_story.jpg">
-        </div>
-      </article>
-      <article class="project-section">
-        <div class="project-section-header">
-          <h2>Trip overview</h2>
-          <p>Design had a limited number of weeks to get started before deliverables needed to be ready for development. The junior design and I tackled the top of the post-booking page first, knowing we wanted to give the customer an overally summary of their trip, highlight thier savings, and make it easy for them to access more information.</p>
-        </div>
-        <div class="project-content">
-          <img src="img/PricelinePostbooking/PricelinePostbooking_HeaderWires.png">
-          <img src="img/PricelinePostbooking/PricelinePostbooking_Header.jpg">
-        </div>
-      </article>
-      <article class="project-section">
-        <div class="project-section-header">
-          <h2>Dynamic content</h2>
-          <p>During the customer journey workshop, the idea of providing the user with updated information depending on where they were in the journey was dscussed. This dynamic contnent component, aligns with the first three chapters of the customer’s journey: post-booking, planning, and pre-travel. The content would also update depending on which products a customer had booked.</p>
-        </div>
-        <img src="img/PricelinePostbooking/PricelinePostbooking_DynamicContent.png">
-      </article>
-      <article class="project-section">
-        <div class="project-section-header">
-         <h2>Product component</h2>
-         <p>It was important to show the customer a summary of each of their product details they had just booked. By the time the customer gets to post-bookung, they had seen product details presented to them in numerous ways. One of the goals of this product component was for it to be utilized throughout the experience so the product information is presented to the customer in a familiar, similar way.</p>
-        </div>
-        <div class="project-content">
-          <img src="img/PricelinePostbooking/PricelinePostbooking_ProductComponent1.png">
-          <img src="img/PricelinePostbooking/PricelinePostbooking_ProductComponent2.png">
-        </dv>
-      </article>
-      <article class="project-section">
-        <div class="project-section-header">
-          <h2>Cancellation flow</h2>
-          <p>Self-service cancellation, where available, is an important part of the customer experience. Product and design partnered closely with finance and customer care to learn more about chargebacks, the reasons customer’s cancel, and the how refunds work.</p>
+          <h2>My role</h2>
+          <ul>
+            <li>Led product design for the post-booking confirmation experience.</li>
+            <li>Partnered with user research to map the customer journey and clarify scope.</li>
+            <li>Designed reusable React components that could support single-product and multi-product trips.</li>
+          </ul>
         </div>
         <div>
-          <iframe width="656" height="369" src="https://www.youtube.com/embed/6Qwz-7Yr-Ew" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <h2>The team</h2>
+          <ul>
+            <li>Myself as Lead Product Designer</li>
+            <li>Junior Designer (first half of the project)</li>
+            <li>Product Manager</li>
+            <li>4 Front-End Developers</li>
+            <li>Customer Care, Finance, and Product Vertical Partners</li>
+          </ul>
         </div>
-      </article>
-      <article class="project-section">
-        <div class="project-section-header">
-          <h2>Full design</h2>
-          <p>The final design encorporated all of the above components/features with an emphasis around information in the right context. The design was dynamic, accounting for a customer booking 1 product or multiple products. The summary at the top of the page acted as hyplinks to the relevant product info lower down. FAQs and cancellation were moved into product summary cards rather than being on their own which was how they were designed in the old experience.</p>
+      </section>
+      <section class="case-section">
+        <h2>Strategic challenge</h2>
+        <p>Over time, Priceline’s post-booking order confirmation experience had fractured into separate, product-specific templates managed independently by individual vertical teams (Air, Hotel, Car). While this legacy setup sufficed when customers primarily bought individual items, it created an increasingly disconnected and disjointed user experience as the business looked toward multi-product growth.</p>
+        <p>The goal was to design and architect a single, cross-functional itinerary application that could dynamically scale to support both single-product purchases and complex multi-product bundles. By moving to a flexible system of unified React components to deprecate the old Angular pages, the new experience aimed to give bundling customers a comprehensive, beautifully organized summary of their entire trip. This design strategy focused on embedding context-aware self-service tools directly within the itinerary, building consumer confidence and protecting the retention gains driven by the bundling initiative.</p>
+      </section>
+      <section class="case-section case-section-title">
+        <h2>Supporting data</h2>
+        <div class="case-section-grid case-section-grid-wide">
+          <div class="case-survey-cards case-survey-cards-wrap">
+            <div class="case-card">
+              <h3>Top clicked FAQ pages</h3>
+              <ul>
+                <li>1. Airline contact list</li>
+                <li>2. Change or cancel hotel rooms</li>
+                <li>3. Change or cancel airline tickets</li>
+                <li>4. Multi airline tickets</li>
+                <li>5. International phone numbers</li>
+              </ul>
+            </div>
+            <div class="case-card">
+              <h3>% of customers who return to the confirmation page</h3>
+              <ul>
+                <li>Packages 83%</li>
+                <li>Air 78%</li>
+                <li>Rental Car 61%</li>
+                <li>Hotel 51%</li>
+              </ul>
+            </div>
+            <div class="case-card">
+              <h3>Top Confirmation Page Events</h3>
+              <ul>
+                <li>1. Print itinerary</li>
+                <li>2. Email itinerary</li>
+                <li>3. Add to calendar</li>
+                <li>4. Can I cancel this reservation?</li>
+                <li>5. Rental car cross-sell</li>
+              </ul>
+            </div>
+          </div>
+          <div class="case-section-copy">
+            <h3>How were customers using the confirmation page?</h3>
+            <p>To understand traveler behavior, the PM and I extracted baseline metrics from Google Analytics. We hit an immediate constraint: due to fragmented legacy ownership, the old confirmation pages lacked standardized tracking, leaving several flows untagged.</p>
+            <p>Instead of waiting, we audited the available data to piece together the traveler journey, uncovering two critical behavioral patterns:</p>
+            <div class="case-callout">
+              <span class="case-callout-label">Key learning</span>
+              <p>Bundling customers treat the confirmation page as a living itinerary—frequently returning post-booking to coordinate multiple moving travel pieces—shifting our target from a static receipt to a dynamic travel hub.</p>
+            </div>
+          </div>
         </div>
-        <img src="img/PricelinePostbooking/PricelinePostbooking_FullDesign.png">
-      </article>
-      <article class="project-section">
-        <div class="project-section-results">
-          <h2>Results</h2>
-          <ol>
-            <li>A single application in react that replaced the need to support and update 4 different confirmation pages.</li>
-            <li>Specific FAQ pages highlighted on the confirmation page saw an increase of up to 76% in pageviews.</li>
-            <li>Customer care contact rates for certain reason codes dropped up to 65%.</li>
-          </ol>
+      </section>
+      <section class="case-section case-section-title">
+        <h2>Customer journey</h2>
+        <div class="case-section-grid case-section-grid-wide">
+          <div class="case-image-stack">
+            <img class="case-image" src="img/PricelinePostbooking/PricelinePostbooking_story.jpg" alt="Priceline post-booking customer journey story chapters">
+          </div>
+          <div class="case-section-copy">
+            <h3>Five chapters of the trip</h3>
+            <p>Priceline’s user researcher and I partnered to lead a workshop defining the customer’s post-booking journey. The group created a 5-chapter story and then, for each chapter, explored what the customer’s mindset might be.</p>
+            <p>This exercise also clarified scope. The first 3 chapters were defined as in scope; the last 2 moved out of scope.</p>
+            <div class="case-callout">
+              <span class="case-callout-label">Key decision</span>
+              <p>Focus the MVP on post-booking, planning, and pre-travel — and defer in-travel and post-travel experiences.</p>
+            </div>
+          </div>
         </div>
-      </article>
-      <article class="project-section-gray">
-        <div class="project-section-reflection">
-          <h2>Reflection</h2>
-          <p>During the research and ideation phase of this project, I was still lead designer for the flights team. A challenge of this project was juggling design for multiple teams at once. A positive was being on multiple teams meant having a background in key product requirements and regulations..</P>
-          <p>I would have liked to have had more up front time for research and more time to think through the architecture of a full post-booking experience, rather than focus mainly on the confirmation page.</P>
-          <p>One of the goals was to build a strong, flexible base, knowing we may need to pivot or grow experience in the future, which the team successfully accomplished.</P>
+        <div class="story case-section-subrow">
+          <div class="story-item">
+            <h5>1. Post-Booking</h5>
+            <p>Did the customer’s order go through and is it correct?</p>
+          </div>
+          <div class="story-item">
+            <h5>2. Plan</h5>
+            <p>Have plans changed or can we help with further plans?</p>
+          </div>
+          <div class="story-item">
+            <h5>3. Pre-travel</h5>
+            <p>What information does the customer need?</p>
+          </div>
+          <div class="story-item">
+            <h5>4. Travel</h5>
+            <p>Does the customer know their daily itinerary?</p>
+          </div>
+          <div class="story-item">
+            <h5>5. Post-travel</h5>
+            <p>How was their trip and can we book their next trip?</p>
+          </div>
         </div>
-      </article>
+      </section>
+      <section class="case-section case-section-title">
+        <h2>Trip overview</h2>
+        <div class="case-section-grid case-section-grid-wide">
+          <div class="case-image-stack">
+            <img class="case-image" src="img/PricelinePostbooking/PricelinePostbooking_HeaderWires.png" alt="Post-booking trip overview wireframes">
+            <img class="case-image case-image-shadow" src="img/PricelinePostbooking/PricelinePostbooking_Header.jpg" alt="Post-booking trip overview design">
+          </div>
+          <div class="case-section-copy">
+            <h3>Start with the summary</h3>
+            <p>Facing a compressed design timeline before development kickoff, I led the structural strategy for the new header ecosystem, partnering with a junior designer to execute the top of the post-booking experience. Our goal was to transform a static confirmation page into an intuitive, multi-product trip hub by focusing on three architectural pillars:</p>
+            <h4>Holistic Travel Summaries</h4>
+            <p>Designing a cohesive framework that surface overall trip details, highlight user savings, and adapt effortlessly to complex product bundles.</p>
+            <h4>Global Action Center</h4>
+            <p>Standardizing high-frequency utilitarian events (like printing and emailing) in a high-level, global zone to maximize efficiency.</p>
+            <h4>Immediate Verification</h4>
+            <p>Elevating confirmation numbers for each product front-and-center to give multi-destination travelers instant peace of mind.</p>
+          </div>
+        </div>
+      </section>
+      <section class="case-section case-section-title">
+        <h2>Dynamic content</h2>
+        <div class="case-section-copy">
+          <h3>Right information at the right time</h3>
+          <p>Knowing that bundling customers continuously used this screen to track their entire trip, the junior designer and I designed a dynamic content hierarchy below the header. The layout automatically adapts to the user's specific purchase, surfacing tailored modules to guide them smoothly through their travel.</p>
+        </div>
+        <div class="case-stage-grid case-section-subrow">
+          <div>
+            <h4>0-2 days After Booking</h4>
+            <p>The purpose of this content is all around reassurance. Is the customer confident in their booking? Are their trip details correct?</p>
+            <img class="case-image case-image-shadow" src="img/PricelinePostbooking/PricelinePostbooking_ProductSummary_NextSteps1.png" alt="Dynamic content shortly after booking confirming the trip and prompting passengers to review details">
+          </div>
+          <div>
+            <h4>In Between</h4>
+            <p>The purpose of this content is completing your trip. What other add-ons or ancillaries may the customer be interested in based off what they have currently booked?</p>
+            <img class="case-image case-image-shadow" src="img/PricelinePostbooking/PricelinePostbooking_ProductSummary_NextSteps2.png" alt="Dynamic content between booking and travel offering trip countdown and rental car cross-sell">
+          </div>
+          <div>
+            <h4>0-2 Days Before Travel</h4>
+            <p>The purpose of this content is being prepared to travel. What does the customer need to know to have a successful trip?</p>
+            <img class="case-image case-image-shadow" src="img/PricelinePostbooking/PricelinePostbooking_ProductSummary_NextSteps3.png" alt="Dynamic content before travel with check-in guidance and know-before-you-go tips">
+          </div>
+        </div>
+      </section>
+      <section class="case-section case-section-title">
+        <h2>Product component</h2>
+        <div class="case-section-grid case-section-grid-wide">
+          <div class="case-image-stack">
+            <img class="case-image case-image-shadow" src="img/PricelinePostbooking/PricelinePostbooking_ProductComponent1.png" alt="Post-booking product summary component">
+            <img class="case-image case-image-shadow" src="img/PricelinePostbooking/PricelinePostbooking_ProductComponent2.png" alt="Post-booking product summary component variations">
+          </div>
+          <div class="case-section-copy">
+            <h3>Familiar product details</h3>
+            <p>It was important to show customers a summary of each product they had just booked. By post-booking, they had already seen product details presented in numerous ways. One goal of this component was for it to be reused throughout the experience so product information stayed familiar and consistent.</p>
+          </div>
+        </div>
+      </section>
+      <section class="case-section case-section-title">
+        <h2>Product card</h2>
+        <div class="case-section-grid case-section-grid-wide">
+          <div class="case-image-stack">
+            <img class="case-image case-image-shadow" src="img/PricelinePostbooking/PricelinePostbooking_Tab_Manage.png" alt="Product card Manage tab with confirmation details, cancellation policy, and top FAQs">
+            <img class="case-image case-image-shadow" src="img/PricelinePostbooking/PricelinePostbooking_Tab_Room.png" alt="Product card Room tab with room details and included amenities">
+            <img class="case-image case-image-shadow" src="img/PricelinePostbooking/PricelinePostbooking_Tab_Info.png" alt="Product card Important Info tab with check-in requirements and additional hotel information">
+          </div>
+          <div class="case-section-copy">
+            <h3>Self-service tools, on demand</h3>
+            <p>Below the product summary and details for each product booked there is a tabbed section with self service tools and additional information about each product booked. The tabs allow for more information to be accessed if need be, and saves on space when the customer has a package booking.</p>
+          </div>
+        </div>
+      </section>
+      <section class="case-section case-section-title">
+        <h2>Cancellation flow</h2>
+        <div class="case-section-grid case-section-grid-wide">
+          <div class="case-image-stack">
+            <iframe width="100%" height="560" src="https://www.youtube.com/embed/6Qwz-7Yr-Ew" title="Priceline post-booking cancellation flow" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <div class="case-section-copy">
+            <h3>Self-service when it matters</h3>
+            <p>Self-service cancellation, where available, is an important part of the customer experience. Product and design partnered closely with finance and customer care to learn more about chargebacks, why customers cancel, and how refunds work.</p>
+          </div>
+        </div>
+      </section>
+      <section class="case-section case-section-title">
+        <h2>Full design</h2>
+        <div class="case-section-grid case-section-grid-wide">
+          <div class="case-image-stack">
+            <img class="case-image case-image-shadow" src="img/PricelinePostbooking/PricelinePostbooking_FullDesign.png" alt="Full Priceline post-booking confirmation design">
+          </div>
+          <div class="case-section-copy">
+            <h3>One itinerary, many products</h3>
+            <p>The final design incorporated all of the above components with an emphasis on information in the right context. It was dynamic, accounting for a customer booking 1 product or multiple products. The summary at the top acted as hyperlinks to relevant product info lower down. FAQs and cancellation moved into product summary cards rather than living on their own as they had in the old experience.</p>
+          </div>
+        </div>
+      </section>
+      <section class="case-outcomes">
+        <div class="case-outcomes-content">
+          <div>
+            <h2>Outcomes</h2>
+            <ul>
+              <li>A single React application that replaced the need to support and update 4 different confirmation pages</li>
+              <li>Specific FAQ pages highlighted on the confirmation page saw an increase of up to 76% in pageviews</li>
+              <li>Customer care contact rates for certain reason codes dropped up to 65%</li>
+            </ul>
+          </div>
+          <div>
+            <h2>Reflection</h2>
+            <ul>
+              <li>During research and ideation I was still lead designer for the flights team, so a challenge was juggling design for multiple teams at once. A positive was that being on multiple teams meant having background in key product requirements and regulations.</li>
+              <li>I would have liked more upfront research time and more space to think through the architecture of a full post-booking experience, rather than focusing mainly on the confirmation page.</li>
+              <li>One of the goals was to build a strong, flexible base knowing we might need to pivot or grow the experience later — which the team successfully accomplished.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </main>
   </body>
 </html>
